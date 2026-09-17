@@ -1,0 +1,24 @@
+.border {border:var(--border-1) solid var(--border);}
+.border-none {border:none;}
+.border-1 {border-width:var(--border-1);}
+.border-2 {border-width:var(--border-2);}
+.border-3 {border-width:var(--border-3);}
+.border-4 {border-width:var(--border-4);}
+.border-solid {border-style:solid;};
+.border-dashed {border-style:dashed;}
+.border-dotted {border-style:dotted;}
+.border-double {border-style:double;}
+.border-top {border-top:var(--border-1) solid var(--border);}
+.border-right {border-right:var(--border-1) solid var(--border);}
+.border-bottom {border-bottom:var(--border-1) solid var(--border);}
+.border-left {border-left:var(--border-1) solid var(--border);}
+.border-subtle {border-color:var(--border-subtle);}
+.border-muted {border-color:var(--border-muted);}
+.border-strong {border-color:var(--border-strong);}
+.border-primary {border-color:var(--primary);}
+.border-secondary {border-color:var(--secondary);}
+.border-success {border-color:var(--success);}
+.border-warning {border-color:var(--warning);}
+.border-danger {border-color:var(--danger);}
+.border-info {border-color:var(--info);}
+.border-accent{border-color:var(--accent);}

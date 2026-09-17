@@ -1,0 +1,20 @@
+[data-theme="corporate"] {
+    --primary:var(--navy-600);
+    --primary-hover:var(--navy-700);
+    --primary-active:var(--navy-800);
+    --primary-soft:var(--navy-100);
+    --secondary:var(--slate-600);
+    --secondary-hover:var(--slate-700);
+    --secondary-active:var(--slate-800);
+    --secondary-soft:var(--slate-100);
+    --accent:var(--cyan-500);
+    --accent-hover:var(--cyan-600);
+    --accent-active:var(--cyan-700);
+    --accent-soft:var(--cyan-100);
+    --background:var(--slate-50);
+    --surface:var(--white);
+    --heading:var(--navy-900);
+    --text:var(--slate-900);
+    --text-secondary:var(--slate-700);
+    --border:var(--slate-300);
+}

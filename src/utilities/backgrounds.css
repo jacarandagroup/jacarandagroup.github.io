@@ -1,0 +1,12 @@
+.bg-cover {background-size:cover;}
+.bg-contain {background-size:contain;}
+.bg-auto {background-size:auto;}
+.bg-center {background-position:center;}
+.bg-top {background-position:top;}
+.bg-bottom {background-position:bottom;}
+.bg-left {background-position:left;}
+.bg-right {background-position:right;}
+.bg-no-repeat {background-repeat:no-repeat;}
+.bg-repeat {background-repeat:repeat;}
+.bg-fixed {background-attachment:fixed;}
+.bg-scroll {background-attachment:scroll;}

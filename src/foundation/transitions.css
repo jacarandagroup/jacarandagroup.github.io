@@ -1,0 +1,15 @@
+:root {
+    --transition-fast:120ms ease;
+    --transition-normal:200ms ease;
+    --transition-slow:350ms ease;
+    --transition:var(--transition-normal);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    :root {
+        --transition-fast:0ms;
+        --transition-normal:0ms;
+        --transition-slow:0ms;
+        --transition:0ms;
+    }
+}

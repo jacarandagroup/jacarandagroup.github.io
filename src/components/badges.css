@@ -1,0 +1,50 @@
+.badge {
+    --badge-bg:var(--surface-secondary);
+    --badge-color:var(--text-secondary);
+    display:inline-flex;
+    align-items:center;
+    gap:var(--space-1);
+    padding:.25em .65em;
+    border-radius:var(--radius-full);
+    background:var(--badge-bg);
+    color:var(--badge-color);
+    font-size:var(--text-xs);
+    font-weight:var(--font-semibold);
+    line-height:1.4;
+    white-space:nowrap;
+}
+
+.badge.primary {
+    --badge-bg:var(--primary-soft);
+    --badge-color:var(--primary-active);
+}
+
+.badge.secondary {
+    --badge-bg:var(--secondary-soft);
+    --badge-color:var(--secondary-active);
+}
+
+.badge.success {
+    --badge-bg:var(--success-soft);
+    --badge-color:var(--success-text);
+}
+
+.badge.warning {
+    --badge-bg:var(--warning-soft);
+    --badge-color:var(--warning-text);
+}
+
+.badge.danger {
+    --badge-bg:var(--danger-soft);
+    --badge-color:var(--danger-text);
+}
+
+.badge.info {
+    --badge-bg:var(--info-soft);
+    --badge-color:var(--info-text);
+}
+
+.badge.accent {
+    --badge-bg:var(--gold);
+    --badge-color:var(--silver-950);
+}

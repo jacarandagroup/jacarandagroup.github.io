@@ -1,0 +1,14 @@
+@layer reset, tokens, base, themes, layout, components, utilities;
+@import "foundation/reset.css" layer(reset);
+@import "foundation/colors.css" layer(tokens);
+@import "foundation/spacing.css" layer(tokens);
+@import "foundation/radius.css" layer(tokens);
+@import "foundation/shadows.css" layer(tokens);
+@import "foundation/borders.css" layer(tokens);
+@import "foundation/transitions.css" layer(tokens);
+@import "foundation/animations.css" layer(tokens);
+@import "foundation/typography.css" layer(base);
+@import "themes/index.css" layer(themes);
+@import "layout/index.css" layer(layout);
+@import "components/index.css" layer(components);
+@import "utilities/index.css" layer(utilities);

@@ -1,0 +1,22 @@
+.filter-blur,
+.filter-blur-md {filter:blur(8px);}
+
+.filter-blur-xs {filter:blur(2px);}
+.filter-blur-sm {filter:blur(4px);}
+.filter-blur-lg {filter:blur(12px);}
+.filter-blur-xl {filter:blur(16px);}
+
+.backdrop-blur {
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+}
+
+.grayscale {filter:grayscale(1);}
+
+.brightness-25 {filter:brightness(.25);}
+.brightness-50 {filter:brightness(.5);}
+.brightness-75 {filter:brightness(.75);}
+.brightness-125 {filter:brightness(1.25);}
+.brightness-150 {filter:brightness(1.5);}
+.brightness-175 {filter:brightness(1.75);}
+.brightness-200 {filter:brightness(2);}

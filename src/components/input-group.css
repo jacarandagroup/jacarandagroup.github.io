@@ -1,0 +1,51 @@
+.input-group {
+    display:flex;
+    align-items:stretch;
+    width:100%;
+}
+
+.input-group>.input,
+.input-group>.select,
+.input-group>.btn,
+.input-group>.addon {
+    border-radius:0;
+    margin-left:calc(var(--border-1) * -1);
+}
+
+.input-group>*:first-child {
+    margin-left:0;
+    border-top-left-radius:var(--input-radius);
+    border-bottom-left-radius:var(--input-radius);
+}
+
+.input-group>*:last-child {
+    border-top-right-radius:var(--input-radius);
+    border-bottom-right-radius:var(--input-radius);
+}
+
+.input-group>.input,
+.input-group>.select {
+    min-width:0;
+    flex:1 1 auto;
+}
+
+.input-group>.btn,
+.input-group>.addon {
+    flex:0 0 auto;
+}
+
+.addon {
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding-inline:var(--space-4);
+    border:var(--border-1) solid var(--border);
+    background:var(--surface-secondary);
+    color:var(--text-secondary);
+    white-space:nowrap;
+}
+
+.input-group>*:focus {
+    position:relative;
+    z-index:1;
+}

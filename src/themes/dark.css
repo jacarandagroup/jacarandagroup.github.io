@@ -1,0 +1,25 @@
+[data-theme="dark"]{
+    --background:var(--gray-950);
+    --background-secondary:var(--gray-900);
+    --background-tertiary:var(--gray-800);
+    --background-inverse:var(--white);
+    --surface:var(--gray-900);
+    --surface-secondary:var(--gray-800);
+    --surface-tertiary:var(--gray-700);
+    --surface-hover:var(--gray-800);
+    --surface-active:var(--gray-700);
+    --surface-disabled:var(--gray-900);
+    --text:var(--gray-100);
+    --heading:var(--white);
+    --text-secondary:var(--gray-300);
+    --text-muted:var(--gray-400);
+    --text-disabled:var(--gray-600);
+    --text-placeholder:var(--gray-500);
+    --text-inverse:var(--gray-950);
+    --border:var(--gray-700);
+    --border-subtle:var(--gray-800);
+    --border-muted:var(--gray-600);
+    --border-strong:var(--gray-400);
+    --selection-background:var(--blue-800);
+    --selection-text:var(--white);
+}

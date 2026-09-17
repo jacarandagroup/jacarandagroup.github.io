@@ -1,0 +1,15 @@
+:root {
+    --section-padding-sm:3rem;
+    --section-padding:5rem;
+    --section-padding-lg:7rem;
+}
+
+.section {padding-block:var(--section-padding);}
+.section-sm {padding-block:var(--section-padding-sm);}
+.section-lg {padding-block:var(--section-padding-lg);}
+
+@media (max-width:767.98px) {
+    .section {padding-block:var(--space-12);}
+    .section-sm {padding-block:var(--space-8);}
+    .section-lg {padding-block:var(--space-16);}
+}

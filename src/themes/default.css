@@ -1,0 +1,5 @@
+:root,[data-theme="default"]{
+ --primary:var(--blue-500);--primary-hover:var(--blue-600);--primary-active:var(--blue-700);--primary-soft:var(--blue-100);
+ --secondary:var(--gray-500);--secondary-hover:var(--gray-600);--secondary-active:var(--gray-700);--secondary-soft:var(--gray-100);
+ --accent:var(--gold-500);--accent-hover:var(--gold-600);--accent-active:var(--gold-700);--accent-soft:var(--gold-100);
+}

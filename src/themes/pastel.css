@@ -1,0 +1,6 @@
+[data-theme="pastel"]{
+ --primary:var(--lavender-500);--primary-hover:var(--lavender-600);--primary-active:var(--lavender-700);--primary-soft:var(--lavender-100);
+ --secondary:var(--rose-400);--secondary-hover:var(--rose-500);--secondary-active:var(--rose-600);--secondary-soft:var(--rose-100);
+ --accent:var(--gold-400);--accent-hover:var(--gold-500);--accent-active:var(--gold-600);--accent-soft:var(--gold-100);
+ --background:var(--lavender-50);--background-secondary:var(--rose-50);--surface:var(--white);--surface-secondary:var(--lavender-50);--heading:var(--indigo-900);
+}

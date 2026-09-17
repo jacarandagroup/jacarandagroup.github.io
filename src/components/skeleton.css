@@ -1,0 +1,39 @@
+.skeleton {
+    position:relative;
+    display:block;
+    overflow:hidden;
+    background:var(--surface-secondary);
+    border-radius:var(--radius-md);
+    min-height:1rem;
+    color:transparent;
+}
+
+.skeleton::after {
+    content:"";
+    position:absolute;
+    inset:0;
+    transform:translateX(-100%);
+    background:linear-gradient(90deg, transparent, color-mix(in srgb, var(--surface) 70%, transparent), transparent);
+    animation:skeleton-wave 1.4s ease-in-out infinite;
+}
+
+.skeleton.text {
+    height:.9em;
+    width:100%;
+    border-radius:var(--radius-sm);
+}
+
+.skeleton.circle {
+    width:48px;
+    height:48px;
+    border-radius:var(--radius-full);
+}
+
+.skeleton.button {
+    width:120px;
+    height:42px;
+    border-radius:var(--button-radius);
+}
+
+@keyframes skeleton-wave {100% {transform:translateX(100%);}}
+@media (prefers-reduced-motion:reduce) {.skeleton::after{animation:none;}}

@@ -1,0 +1,45 @@
+.close {
+    position:relative;
+    appearance:none;
+    display:inline-grid;
+    place-items:center;
+    width:36px;
+    height:36px;
+    padding:0;
+    border:0;
+    border-radius:var(--radius-full);
+    background:transparent;
+    color:inherit;
+    cursor:pointer;
+    font-size:0;
+    transition:
+        background-color var(--transition-fast),
+        opacity var(--transition-fast);
+}
+
+.close::before,
+.close::after {
+    content:"";
+    position:absolute;
+    width:16px;
+    height:2px;
+    border-radius:2px;
+    background:currentColor;
+}
+
+.close::before {
+    transform:rotate(45deg);
+}
+
+.close::after {
+    transform:rotate(-45deg);
+}
+
+.close:hover {
+    background:var(--surface-secondary);
+}
+
+.close:disabled {
+    opacity:.45;
+    cursor:not-allowed;
+}

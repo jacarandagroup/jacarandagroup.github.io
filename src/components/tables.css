@@ -1,0 +1,30 @@
+.table-wrap {
+    width:100%;
+    overflow-x:auto;
+}
+
+.table {
+    width:100%;
+    border-collapse:collapse;
+    text-align:left;
+}
+
+.table th,
+.table td {
+    padding:var(--space-3) var(--space-4);
+    border-bottom:var(--border-1) solid var(--border-subtle);
+}
+
+.table th {
+    font-weight:var(--font-semibold);
+    color:var(--heading);
+    background:var(--surface-secondary);
+}
+
+.table.striped tbody tr:nth-child(even) {
+    background:var(--surface-secondary);
+}
+
+.table.hover tbody tr:hover {
+    background:var(--surface-hover);
+}

@@ -1,0 +1,29 @@
+.opacity-0 {opacity:0;}
+.opacity-25 {opacity:.25;}
+.opacity-50 {opacity:.5;}
+.opacity-75 {opacity:.75;}
+.opacity-100 {opacity:1;}
+
+.pointer {cursor:pointer;}
+
+.cursor-default {cursor:default;}
+
+.no-select {user-select:none;}
+.select-text {user-select:text;}
+
+.pointer-none {pointer-events:none;}
+
+.sr-only {
+    position:absolute;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    white-space:nowrap;
+    border:0;
+}
+
+.invisible {visibility:hidden;}
+.visible {visibility:visible;}

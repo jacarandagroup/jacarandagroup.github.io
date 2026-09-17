@@ -1,0 +1,15 @@
+:root {
+    --border-1:1px;
+    --border-2:2px;
+    --border-3:3px;
+    --border-4:4px;
+    --border-style-none:none;
+    --border-style-solid:solid;
+    --border-style-dashed:dashed;
+    --border-style-dotted:dotted;
+    --border-style-double:double;
+    --border-subtle:var(--gray-200);
+    --border-muted:var(--gray-400);
+    --border-strong:var(--gray-600);
+    --border-focus:var(--primary);
+}

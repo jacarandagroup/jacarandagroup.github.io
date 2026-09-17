@@ -1,0 +1,196 @@
+.navbar{
+    --navbar-height:68px;
+    --navbar-bg:var(--surface);
+    --navbar-color:var(--text);
+    --navbar-border:var(--border-subtle);
+    position:relative;
+    width:100%;
+    color:var(--navbar-color);
+    background:var(--navbar-bg);
+    z-index:40;
+}
+
+.navbar-inner {
+    min-height:var(--navbar-height);
+    display:flex;
+    align-items:center;
+    gap:var(--space-6);
+    width:100%;
+}
+.navbar .brand {
+    flex:0 0 auto;
+}
+.navbar-menu {
+    display:flex;
+    align-items:center;
+    gap:var(--space-6);
+    margin-left:auto;
+}
+.navbar-actions {
+    display:flex;
+    align-items:center;
+    gap:var(--space-3);
+    flex:0 0 auto;
+}
+
+.navbar-text {
+    color:var(--text-secondary);
+    font-size:var(--text-sm);
+}
+
+.navbar .nav-link {
+    display:inline-flex;
+    align-items:center;
+    min-height:40px;
+    padding-inline:var(--space-1);
+    font-weight:500;
+    color:inherit;
+    border-radius:var(--radius-sm);
+}
+
+.navbar .nav-link.active {
+    color:var(--primary);
+}
+
+.navbar .nav-link.disabled,
+.navbar .nav-link [aria-disabled="true"] {
+    opacity:.45;pointer-events:none;
+}
+
+.navbar.sticky {
+    position:sticky;
+    top:0;
+    z-index:50;
+}
+
+.navbar.fixed {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:50;
+}
+
+.navbar.transparent {
+    --navbar-bg:transparent;
+}
+
+.navbar.solid {
+    --navbar-bg:var(--surface);
+}
+.navbar.blur {
+    --navbar-bg:color-mix(in srgb, var(--surface) 84%, transparent);
+    backdrop-filter:blur(16px);
+    -webkit-backdrop-filter:blur(16px);
+}
+
+.navbar.bordered {
+    border-bottom:var(--border-1) solid var(--navbar-border);
+}
+
+.navbar.shadow {
+    box-shadow:var(--shadow-sm);
+}
+.navbar.compact {
+    --navbar-height:56px;
+}
+
+.navbar-toggle {
+    display:none;
+    margin-left:auto;
+}
+
+.navbar-collapse {
+    display:flex;
+    align-items:center;
+    gap:var(--space-6);
+    flex:1;
+    min-width:0;
+}
+
+.navbar-collapse .navbar-menu {
+    margin-left:auto;
+}
+
+@media(max-width:1023.98px) {
+    .navbar.expand-desktop .navbar-toggle {
+       display:inline-flex;
+    }
+
+    .navbar.expand-desktop .navbar-collapse {
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        right:0;
+        flex-direction:column;
+        align-items:stretch;
+        gap:var(--space-4);
+        padding:var(--space-4);
+        background:var(--navbar-bg);
+        border-bottom:var(--border-1) solid var(--navbar-border);
+        box-shadow:var(--shadow-md);
+    }
+
+    .navbar.expand-desktop .navbar-collapse.open,
+    .navbar.expand-desktop .navbar-collapse [data-open="true"] {
+        display:flex;
+    }
+
+    .navbar.expand-desktop .navbar-menu,
+    .navbar.expand-desktop .navbar-actions {
+        width:100%;
+        flex-direction:column;
+        align-items:stretch;
+        margin-left:0;
+    }
+
+    .navbar.expand-desktop .nav-link {
+        width:100%;
+    }
+}
+
+@media(max-width:767.98px) {
+    .navbar:not(.expand-desktop) .navbar-toggle,
+    .navbar.expand-tablet .navbar-toggle {
+        display:inline-flex;
+    }
+
+    .navbar:not(.expand-desktop) .navbar-collapse,
+    .navbar.expand-tablet .navbar-collapse {
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        right:0;
+        flex-direction:column;
+        align-items:stretch;
+        gap:var(--space-4);
+        padding:var(--space-4);
+        background:var(--navbar-bg);
+        border-bottom:var(--border-1) solid var(--navbar-border);
+        box-shadow:var(--shadow-md);
+    }
+
+    .navbar:not(.expand-desktop) .navbar-collapse.open,
+    .navbar:not(.expand-desktop) .navbar-collapse [data-open="true"],
+    .navbar.expand-tablet .navbar-collapse.open,
+    .navbar.expand-tablet .navbar-collapse [data-open="true"] {
+        display:flex;
+    }
+
+    .navbar:not(.expand-desktop) .navbar-menu,
+    .navbar:not(.expand-desktop) .navbar-actions,
+    .navbar.expand-tablet .navbar-menu,
+    .navbar.expand-tablet .navbar-actions {
+        width:100%;
+        flex-direction:column;
+        align-items:stretch;
+        margin-left:0;
+    }
+
+    .navbar:not(.expand-desktop) .nav-link,
+    .navbar.expand-tablet .nav-link {
+        width:100%;
+    }
+}

@@ -1,0 +1,16 @@
+@media (max-width:1023.98px) {
+    .tablet-column {flex-direction:column;}
+    .tablet-row {flex-direction:row;}
+    .tablet-hidden {display:none;}
+    .tablet-full {width:100%};
+}
+
+@media (max-width:767.98px) {
+    .mobile-column {flex-direction:column;}
+    .mobile-row {flex-direction:row;}
+    .mobile-hidden {display:none;}
+    .mobile-block {display:block;}
+    .mobile-flex {display:flex};
+    .mobile-full {width:100%;}
+    .mobile-text-center {text-align:center;}
+}

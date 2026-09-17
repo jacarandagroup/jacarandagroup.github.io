@@ -1,0 +1,28 @@
+.w-auto {width:auto;}
+.w-full,.full {width:100%;}
+.w-screen {width:100vw;}
+
+.fit {
+    width:fit-content;
+    max-width:100%;
+}
+
+.h-auto {height:auto;}
+.h-full {height:100%;}
+.h-screen {height:100vh;}
+
+.min-w-0 {min-width:0;}
+.min-h-0 {min-height:0;}
+.min-w-full {min-width:100%;}
+.min-h-full {min-height:100%;}
+.min-h-screen {min-height:100vh;}
+
+.max-w-full {max-width:100%;}
+.max-w-xs {max-width:20rem;}
+.max-w-sm {max-width:24rem;}
+.max-w-md {max-width:28rem;}
+.max-w-lg {max-width:32rem;}
+.max-w-xl {max-width:36rem;}
+.max-w-2xl {max-width:42rem;}
+
+.prose {max-width:65ch;}
