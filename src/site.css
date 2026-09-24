@@ -358,9 +358,6 @@
 .final-facts li {color:#344334;}
 .site-footer {background-color:#f7efdf;}
 
-@media (max-width:1281px) {
-  .hero .container {max-width: 1080px;}
-}
 
 @media (max-width:1199.98px) {
   .hero-arc {width:51vw; right:1%; opacity:.55;}
