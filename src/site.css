@@ -96,6 +96,7 @@
 /* SECTION 02 - PROBLEMS */
     .problem-grid li {display:flex; align-items:center;}
     .problem-grid i {font-size: 2.2rem;}
+    @media (max-width:560px) {.problem-grid i {display: none;}}
 
 /* SECTION 06 - SUCCESS STORIES */
 
@@ -161,8 +162,7 @@
 
 
 /* Carousel */
-/* .stories-controls {position:absolute; right:0; top:-86px; gap:13px;} */
-.stories-controls {position:static; margin-top:26px;}
+.stories-controls {position:absolute; right:0; top:-86px; gap:13px;}
 
 .carousel-control.btn {width:44px; min-height:44px; padding:0; border-radius:50%; background:transparent; border:1px solid #dbc6a9; color:#243944; box-shadow:none;}
 .carousel-control.btn:hover {background:#2e3c31; border-color:#2e3c31; color:#fff;}
@@ -175,6 +175,8 @@
   display: flex;
   align-items: center;
   gap: 2px;
+  position: static;
+  margin-top: 26px;
 }
 
 .carousel-dot {
@@ -373,7 +375,7 @@
   /* .hero::before {background:linear-gradient(90deg,#faf5ec 0%,rgba(250,245,236,.97) 38%,rgba(250,245,236,.87) 51%,rgba(250,245,236,.1) 76%);} */
   .insight-copy {padding:52px 38px;}
   .offer-layout {gap:42px;}
-  .stories-controls {position:static; margin-top:26px;}
+  /* .stories-controls {position:static; margin-top:26px;} */
 }
 @media (max-width:1023.98px) {
   .hero-arc {width:54vw; right:-6%; opacity:.35;}
@@ -474,7 +476,7 @@
   .stories-carousel {--slides-per-view:1; --story-width:100%;}
   .stories-track {grid-template-columns:1fr;}
   .story-card {min-height:235px; padding:26px;}
-  .stories-controls {margin-top:24px; gap:18px;}
+  /* .stories-controls {margin-top:24px; gap:18px;} */
   .final-cta {padding-block:53px 43px;}
   .final-panel {gap:25px;}
   .final-copy {gap:21px;}
