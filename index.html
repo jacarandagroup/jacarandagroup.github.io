@@ -1,292 +1,495 @@
 <!doctype html>
-<html data-theme="default" lang="ru">
+<html data-theme="default" lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Oxford Capacity Analysis — бесплатный тест и личный разбор в Кьялами.">
+  <meta name="description" content="Oxford Capacity Analysis — free personal test and consultation in Kyalami">
   <title>Oxford Capacity Analysis</title>
   <link rel="stylesheet" href="src/framework.css">
   <link rel="stylesheet" href="src/site.css">
-<meta name="theme-color" content="#f8f6f1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+  <meta name="theme-color" content="#faf5ec">
 </head>
+
 <body id="top">
-  <header class="site-header">
-    <div class="container flex row items-center justify-between gap-4">
-      <a class="site-brand" aria-label="Oxford Capacity Analysis — в начало" href="#top">
-        <span class="brand-symbol" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="15.5" stroke="currentColor" stroke-width="1.3"></circle><path d="M17 2.5a17.7 17.7 0 0 1 18.9 25.3M8 33.2A17.7 17.7 0 0 1 20 2.3M24.5 36.9A17.6 17.6 0 0 1 4.2 12" stroke="currentColor" stroke-width=".8"></path><circle cx="20" cy="20" r="12.8" stroke="currentColor" stroke-width=".5"></circle></svg></span><span>Oxford Capacity Analysis</span>
-      </a>
-      <nav aria-label="Основная навигация"><a class="btn accent rounded-lg header-cta" href="#start">Start Test <span aria-hidden="true">→</span></a></nav>
+
+<!-- Header -->
+  <header class="header shadow-sm sticky z-100 top-0 py-4">
+    <div class="container">
+
+      <nav class="nav flex row items-center justify-between">
+
+        <a class="brand" href="#top">OXFORD CAPACITY ANALYSIS</a>
+
+        <div class="flex items-center gap-4">
+          <div class="dropdown">
+            <button class="btn-lang"><i class="fa-solid fa-language"></i></button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item lang-btn active" data-lang="en">EN</a>
+              <a class="dropdown-item lang-btn" data-lang="af">AF</a>
+              <a class="dropdown-item lang-btn" data-lang="zu">ZU</a>
+              <a class="dropdown-item lang-btn" data-lang="ru">RU</a>
+            </div>
+          </div>
+
+          <a class="btn primary rounded-full" href="#start">Start Test</a>
+        </div>
+      </nav>
+      
     </div>
   </header>
 
   <main>
     <!-- 01 — Hero -->
-    <section class="section hero" aria-labelledby="hero-title">
-      <figure class="hero-photo"><img src="img/cape-town-hero.jpg" width="1536" height="1024" alt="Мужчина у окна с видом на Кейптаун" fetchpriority="high"></figure>
-<div class="container hero-inner"><div class="hero-layout grid cols-2 mobile-cols-1 items-center">
-<div class="hero-copy stack">
-        <p class="eyebrow">Oxford Capacity Analysis</p>
-        <h1 id="hero-title">Что на самом деле мешает вам жить так, как вы хотите?</h1>
-        <p class="hero-lead">Если проблемы возращаются, несмотря на все ваши попытки их решить, значит, вы до сих пор не видите, что на самом деле их вызывает. Бесплатный тест и индивидуальный разбор помогут найти скрытые причины финансовых трудностей, конфликтов, тревоги, неуверенности и повторяющихся неприятностей.</p>
-        <div class="hero-action stack">
-<a href="#start" class="btn primary lg rounded-lg">Начать бесплатный тест <span aria-hidden="true">→</span></a><small>Выделите до 40 минут</small>
-</div>
+    <section class="section hero">
+
+      <span class="ornament hero-weave-left" aria-hidden="true">
+        <img src="svg/ornament-right.svg" alt="" loading="lazy" decoding="async">
+      </span>
+
+      <div class="container hero-inner">
+        <div class="hero-layout grid cols-2 mobile-cols-1 items-center">
+
+          <div class="hero-copy stack">
+
+            <p class="eyebrow">Oxford Capacity Analysis</p>
+            <h1 class="max-w-2xl">Что на самом деле мешает вам жить так, как&nbsp;вы&nbsp;хотите?</h1>
+            <p class="hero-lead">Если проблемы возращаются, несмотря на все ваши попытки их решить, значит, вы до сих пор не видите, что на самом деле их вызывает. Бесплатный тест и индивидуальный разбор помогут найти скрытые причины финансовых трудностей, конфликтов, тревоги, неуверенности и повторяющихся неприятностей.</p>
+
+            <a href="#start" class="btn primary lg rounded-full">Начать бесплатный тест <span aria-hidden="true">→</span></a>
+
+            <div class="grid cols-2 gap-2">
+              <small><i class="fa-regular fa-clock"></i> Выделите до 40 минут</small>
+              <small><i class="fa-solid fa-list-check"></i> Тест бесплатно</small>
+              <small><i class="fa-solid fa-chart-area"></i> Готовый график сразу после теста</small>
+              <small><i class="fa-solid fa-user-group"></i> Личный разбор в Кьялами бесплатно</small>
+            </div>
+          </div>
+        </div>
       </div>
-</div></div>
-    <div class="hero-benefit-band"><div class="container">
-<ul class="hero-benefits">
-<li>
-<svg class="line-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="16" r="11.5"></circle><path d="m21 11-3 7-7 3 3-7 7-3Z"></path></svg><span>Тест бесплатно</span>
-</li>
-<li>
-<svg class="line-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 26h21M7 21V15h4v6M14 21V10h4v11M21 21V5h4v16"></path></svg><span>Готовый график сразу после теста</span>
-</li>
-<li>
-<svg class="line-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="10" r="4"></circle><path d="M7 27v-4a9 9 0 0 1 18 0v4M24 7a4 4 0 0 1 0 8M28 26v-4a7 7 0 0 0-3-5M8 7a4 4 0 0 0 0 8M4 26v-4a7 7 0 0 1 3-5"></path></svg><span>Личный разбор в Кьялами бесплатно</span>
-</li>
-</ul>
-        </div></div></section>
+    </section>
 
     <!-- 02 — Problems -->
-    <section class="section problems" aria-labelledby="problems-title">
+    <section class="section bg-brown-50">
       <div class="container">
-        <div class="problems-layout">
-<div class="section-heading">
-<span class="section-marker" aria-hidden="true"></span><h2 id="problems-title">Вы пытаетесь изменить ситуации. Но ничего не меняется</h2>
-</div>
-        <ul class="problem-grid grid cols-4 tablet-cols-2 mobile-cols-1">
-          <li>
-<svg class="line-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="14" cy="9" rx="8" ry="4"></ellipse><path d="M6 9v7c0 2.2 3.6 4 8 4M6 16v7c0 2.2 3.6 4 8 4M22 9v4"></path><circle cx="23" cy="22" r="6"></circle><path d="M23 19v6M21.5 19.5h2.1a1.3 1.3 0 0 1 0 2.5h-1.2a1.3 1.3 0 0 0 0 2.5h2.1"></path></svg><span>Денег постоянно не хватает</span>
-</li>
-          <li>
-<svg class="line-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="24" height="17" rx="2"></rect><path d="M11 10V7a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v3M4 16a25 25 0 0 0 24 0M14 17v4h4v-4"></path></svg><span>Работу сложно найти и сохранить</span>
-</li>
-          <li>
-<svg class="line-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 28v-5a9 9 0 1 1 14-8l2 5h-4v5h-5v3M12 11c-3 0-3 5 0 5h7a2 2 0 0 0 0-4h-4M7 18H3M6 11l-3-2M9 5 7 2"></path></svg><span>Тревога мешает принимает решения</span>
-</li>
-          <li>
-<svg class="line-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="14" cy="10" r="5"></circle><path d="M4 28v-3a10 10 0 0 1 15-8M20 23l3 3 6-8"></path></svg><span>Не хватает уверенности в себе</span>
-</li>
-          <li>
-<svg class="line-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5h19a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H13l-7 5v-5H5a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3Z"></path><path d="M9 11h11M9 15h8"></path></svg><span>В отношениях повторяются конфликты</span>
-</li>
-          <li>
-<svg class="line-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3 27 7v8c0 7-6 11-11 14C11 26 5 22 5 15V7L16 3Z"></path><path d="m11 15 4 4 7-8"></path></svg><span>Трудно понять, кому доверять</span>
-</li>
-          <li>
-<svg class="line-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 26h24M7 21l7-8 5 4 9-12M22 5h6v6"></path></svg><span>Успех постоянно ускользает</span>
-</li>
-          <li>
-<svg class="line-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 15 13-11 13 11M7 13v15h18V13M13 28v-8h6v8"></path><path d="M16 13v2"></path></svg><span>Проблемы близких разрушают семью</span>
-</li>
-        </ul>
+
+        <div class="max-w-2xl mb-12">
+          <span class="section-marker" aria-hidden="true"></span>
+          <h2>Вы пытаетесь изменить ситуации. Но&nbsp;ничего не меняется</h2>
         </div>
-<div class="problem-conclusion flex row mobile-column items-center justify-between gap-6">
-<p>Проблема возвращается, пока её настоящая причина остаётся незамеченной.</p>
-<a href="#start" class="btn primary lg rounded-lg">Узнать, что я не замечаю <span aria-hidden="true">→</span></a>
-</div>
+          
+        <ul class="problem-grid grid cols-4 tablet-cols-2 mobile-cols-2 gap-8">
+          <li class="gap-3 pl-0 px-5">
+            <i class="fa-solid fa-wallet"></i>
+            <span>Денег постоянно не&nbsp;хватает</span>
+          </li>
+          <li class="border-left gap-3 px-5">
+            <i class="fa-solid fa-business-time"></i>
+            <span>Работу сложно найти и&nbsp;сохранить</span>
+          </li>
+          <li class="border-left gap-3 px-5">
+            <i class="fa-solid fa-head-side-virus"></i>
+            <span>Тревога мешает принимает решения</span>
+          </li>
+          <li class="border-left gap-3 pr-0 px-5">
+            <i class="fa-solid fa-square-person-confined"></i>
+            <span>Не хватает уверенности в&nbsp;себе</span>
+          </li>
+          <li class="gap-3 pl-0 px-5">
+            <i class="fa-solid fa-comments"></i>
+            <span>В отношениях повторяются конфликты</span>
+          </li>
+          <li class="border-left gap-3 px-5">
+            <i class="fa-solid fa-handshake"></i>
+            <span>Трудно понять, кому&nbsp;доверять</span>
+          </li>
+          <li class="border-left gap-3 px-5">
+            <i class="fa-solid fa-crown"></i>
+            <span>Успех постоянно ускользает</span>
+          </li>
+          <li class="border-left gap-3 pr-0 px-5">
+            <i class="fa-solid fa-house-chimney-crack"></i>
+            <span>Проблемы близких разрушают&nbsp;семью</span>
+          </li>
+        </ul>
+
+        <div class="border-top pt-10 mt-10 gap-8">
+          <div class="toast primary flex row w-full items-center justify-between mobile-column ">
+            <div class="toast-body max-w-2xl">
+              <strong>Проблема возвращается, пока её настоящая причина остаётся незамеченной.</strong>
+            </div>
+            <a href="#start" class="btn outline lg rounded-full">Узнать, что я не замечаю <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
       </div>
     </section>
 
     <!-- 03 — Insight -->
-    <section class="section insight" aria-labelledby="insight-title">
+    <section class="section insight">
       <div class="container insight-layout grid cols-2 mobile-cols-1 gap-8 items-center">
-        <figure class="insight-photo"><img src="img/cape-town-woman.jpg" width="1448" height="1086" alt="Женщина на фоне гор Кейптауна" loading="lazy" decoding="async"></figure><div class="insight-copy stack">
-          <div class="section-heading">
-<span class="section-marker" aria-hidden="true"></span>
-          <h2 id="insight-title">Если бы вы знали настоящую причину, вы уже могли бы с ней что-то сделать</h2>
+
+        <figure class="insight-photo">
+          <img src="img/insight-woman.webp" width="1448" height="1086" alt="Иллюстративный портрет женщины в тёплом свете заката" loading="lazy" decoding="async">
+        </figure>
+
+        <div class="insight-copy stack">
+
+          <div class="max-w-2xl">
+            <span class="section-marker" aria-hidden="true"></span>
+            <h2 id="insight-title">Если бы вы знали настоящую причину, вы уже могли бы с ней что-то сделать</h2>
           </div>
-<div class="insight-paragraphs stack gap-4">
-<p>Вы можете думать, что всему виной партнёр, начальник, нехватка денег или плохие обстоятельства.</p>
-<p>Но люди и обстоятельства меняются, а проблема часто повторяется или остаётся.</p>
-<p>Значит, вы видите последствия, но не то, что снова к ним приводит.</p>
-</div>
-          <a href="#start" class="btn accent lg rounded-lg">Найти настоящую причину <span aria-hidden="true">→</span></a>
+          
+          <div class="insight-paragraphs stack gap-4">
+            <p>Вы можете думать, что всему виной партнёр, начальник, нехватка денег или плохие обстоятельства.</p>
+            <p>Но люди и обстоятельства меняются, а проблема часто повторяется или остаётся.</p>
+
+            <div>
+              <div class="toast primary">
+                <div class="toast-body">
+                  <strong>Значит, вы видите последствия, но не то, что снова к ним приводит.</strong>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <a href="#start" class="btn outline lg rounded-full">Найти настоящую причину <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
         </div>
-        </div>
+      </div>
+
+      <span class="ornament protea" aria-hidden="true">
+        <img src="svg/protea-clipart.svg" alt="" loading="lazy" decoding="async">
+      </span>
     </section>
 
     <!-- 04 — Process -->
-    <section class="section process" aria-labelledby="process-title">
+    <section class="section bg-brown-50">
+      
       <div class="container">
-        <div class="section-heading centered">
-<span class="section-marker" aria-hidden="true"></span><h2 id="process-title">Пройдите тест. Получите график. Узнайте настоящую причину</h2>
-</div>
-        <div class="steps grid cols-3 tablet-cols-1 mobile-cols-1 gap-5">
-          <div class="step-card stack gap-4">
-<div class="step-top flex items-center">
-<span class="step-number">1</span><svg class="line-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="22" height="24" rx="2"></rect><path d="m9 11 2 2 3-4M17 11h6M9 19h14M9 23h10"></path></svg>
-</div>
-<h3 class="step-title">Пройдите тест</h3>
-<p>Ответьте на вопросы о своих реакциях, решениях и поступках.</p>
-</div>
-          <div class="step-card stack gap-4">
-<div class="step-top flex items-center">
-<span class="step-number">2</span><svg class="line-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 27h25M7 23v-7h4v7M14 23V10h4v13M21 23V4h4v19"></path></svg>
-</div>
-<h3 class="step-title">Сразу получите график</h3>
-<p>Увидьте свой индивидуальный профиль по десяти характеристикам личности.</p>
-</div>
-          <div class="step-card stack gap-4">
-<div class="step-top flex items-center">
-<span class="step-number">3</span><svg class="line-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="16" r="12"></circle><path d="m22 10-4 8-8 4 4-8 8-4Z"></path></svg>
-</div>
-<h3 class="step-title">Получите профессиональный разбор</h3>
-<p>Специалист интерпретирует сочетание показателей и покажет, что снова приводит вас к один и тем же проблемам.</p>
-</div>
+
+        <div class="max-w-2xl mb-12">
+          <span class="section-marker" aria-hidden="true"></span>
+          <h2 id="process-title" class="text-balance">Пройдите тест. Получите график. Узнайте настоящую причину</h2>
         </div>
-        <div class="process-conclusion stack items-center">
-<p>Именно сочетание точек позволяет увидеть то, чего человек не замечает сам: скрытую причину повторяющихся трудностей.</p>
-<a href="#start" class="btn primary lg rounded-lg">Пройти тест и получить разбор <span aria-hidden="true">→</span></a>
-</div>
+
+        <div class="steps grid cols-3 mobile-cols-1 gap-5">
+
+          <div class="step-card stack gap-4">
+            <div class="step-top flex items-center">
+              <span class="step-number text-xl">1</span>
+              <h5 class="step-title">Пройдите тест</h5>
+            </div>
+            <p>Ответьте на вопросы о своих реакциях,&nbsp;решениях&nbsp;и&nbsp;поступках.</p>
+          </div>
+
+          <div class="step-card stack gap-4">
+            <div class="step-top flex items-center">
+              <span class="step-number text-xl">2</span>
+              <h5 class="step-title">Сразу получите график</h5>
+            </div>
+            <p>Увидьте свой индивидуальный профиль по&nbsp;десяти характеристикам личности.</p>
+          </div>
+
+          <div class="step-card stack gap-4">
+            <div class="step-top flex items-center">
+              <span class="step-number text-xl">3</span>
+              <h5 class="step-title">Получите профессиональный разбор</h5>
+            </div>
+            <p>Специалист интерпретирует сочетание показателей и&nbsp;покажет, что снова приводит вас&nbsp;к&nbsp;один и тем же проблемам.</p>
+          </div>
+
+        </div>
+
+        <div class="process-conclusion">
+          <div class="toast primary flex w-full items-center justify-between mobile-column">
+            <div class="toast-body">Именно сочетание точек позволяет увидеть то,&nbsp;чего человек не замечает сам:<br>
+              <strong>скрытую причину повторяющихся трудностей.</strong>
+            </div>
+            <a href="#start" class="btn primary lg rounded-full">Пройти тест и получить разбор <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
       </div>
+      <span class="ornament ornament-ring-4" aria-hidden="true">
+        <img src="svg/ornament-ring.svg" alt="" loading="lazy" decoding="async">
+      </span>
     </section>
 
     <!-- 05 — Offer -->
-    <section class="section offer" aria-labelledby="offer-title">
+    <section class="section offer">
+
+      <figure class="offer-photo" aria-hidden="true">
+        <img src="img/analysis-landscape.webp" width="1672" height="941" alt="" loading="lazy" decoding="async">
+      </figure>
+      <span class="ornament offer-weave-left" aria-hidden="true">
+        <img src="svg/ornament-left.svg" alt="" loading="lazy" decoding="async">
+      </span>
+      <span class="ornament ornament-ring" aria-hidden="true">
+        <img src="svg/ornament-ring.svg" alt="" loading="lazy" decoding="async">
+      </span>
+
+
       <div class="container">
+        
         <div class="offer-layout grid cols-2 mobile-cols-1 gap-12 items-center">
           <div class="offer-copy stack gap-8">
-            <div class="section-heading">
-<span class="section-marker" aria-hidden="true"></span><h2 id="offer-title">Полный индивидуальный анализ бесплатно</h2>
-</div>
-        <ul class="offer-list">
-<li>Oxford Capacity Analysis</li>
-<li>Персональный график сразу после теста</li>
-<li>Профессиональная интерпретация результатов</li>
-<li>Личная встреча продолжительностью до одного часа</li>
-<li>Место проведения - Кьялами</li>
-</ul>
+
+            <div class="max-w-2xl">
+              <span class="section-marker" aria-hidden="true"></span>
+              <h2 class="white">Полный индивидуальный анализ бесплатно</h2>
+            </div>
+            
+            <ul class="offer-list">
+              <li>Oxford Capacity Analysis</li>
+              <li>Персональный график сразу после теста</li>
+              <li>Профессиональная интерпретация результатов</li>
+              <li>Личная встреча продолжительностью до одного часа</li>
+              <li>Место проведения - Кьялами</li>
+            </ul>
+
             <div class="pricing grid cols-2 gap-4">
-<p>Тест - <strong>R0</strong></p>
-<p>Личный разбор - <strong>R0</strong></p>
-</div>
-            <a href="#start" class="btn accent lg rounded-lg">Получить бесплатный анализ <span aria-hidden="true">→</span></a>
+              <p>Тест - <strong>R0</strong></p>
+              <p>Личный разбор - <strong>R0</strong></p>
+            </div>
+
+            <a href="#start" class="btn primary lg rounded-full self-start">
+              Получить бесплатный анализ <span aria-hidden="true">→</span>
+            </a>
           </div>
-          <figure class="graph-frame"><img src="img/oca-graph.png" alt="График Oxford Capacity Analysis с десятью характеристиками" loading="lazy" width="1445" height="1088"></figure>
+
+          <figure class="graph-frame">
+            <img src="img/oca-graph.png" alt="График Oxford Capacity Analysis с десятью характеристиками" loading="lazy" width="1445" height="1088">
+          </figure>
+
         </div>
       </div>
     </section>
 
-    <!-- 06 — Verified stories can replace this placeholder -->
-    <section class="section stories" aria-labelledby="stories-title">
+    <!-- 06 — Success Stories -->
+    <section class="section stories">
+
       <div class="container">
-        <div class="section-heading">
-<span class="section-marker" aria-hidden="true"></span><h2 id="stories-title">Что люди поняли после индивидуального разбора</h2>
-</div>
-        <div class="stories-carousel" data-carousel role="group" aria-roledescription="карусель" aria-label="Отзывы участников" tabindex="0">
+
+        <div class="text-balance max-w-2xl mb-12">
+          <span class="section-marker" aria-hidden="true"></span>
+          <h2 id="stories-title">Что люди поняли после индивидуального разбора</h2>
+        </div>
+
+        <div class="stories-carousel" data-carousel role="group" tabindex="0">
           <div class="stories-viewport" id="stories-viewport">
             <div class="stories-track">
-              <article class="story-card stack" role="group" aria-roledescription="слайд" aria-label="Отзыв 1 из 6">
+
+              <article class="story-card stack" role="group">
                 <div class="story-card-top flex items-center justify-between">
-<span class="story-quote" aria-hidden="true">“</span><span class="story-number">01</span>
-</div>
+                  <span class="story-quote" aria-hidden="true">“</span>
+                  <span class="story-number">01</span>
+                </div>
                 <p class="story-text">Здесь будет отзыв участника.</p>
                 <div class="story-lines" aria-hidden="true">
-<span></span><span></span>
-</div>
+                  <span></span>
+                  <span></span>
+                </div>
+                
                 <div class="story-author flex items-center gap-3">
-<span class="story-avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 21v-2a7 7 0 0 1 14 0v2"></path></svg></span><span>Имя автора</span>
-</div>
+                  <span class="story-avatar" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <circle cx="12" cy="8" r="3.5"></circle>
+                      <path d="M5 21v-2a7 7 0 0 1 14 0v2"></path>
+                    </svg>
+                  </span>
+                  <span>Имя автора</span>
+                </div>
               </article>
-              <article class="story-card stack" role="group" aria-roledescription="слайд" aria-label="Отзыв 2 из 6">
+
+              <article class="story-card stack" role="group">
                 <div class="story-card-top flex items-center justify-between">
-<span class="story-quote" aria-hidden="true">“</span><span class="story-number">02</span>
-</div>
+                  <span class="story-quote" aria-hidden="true">“</span>
+                  <span class="story-number">02</span>
+                </div>
                 <p class="story-text">Здесь будет отзыв участника.</p>
                 <div class="story-lines" aria-hidden="true">
-<span></span><span></span>
-</div>
+                  <span></span>
+                  <span></span>
+                </div>
                 <div class="story-author flex items-center gap-3">
-<span class="story-avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 21v-2a7 7 0 0 1 14 0v2"></path></svg></span><span>Имя автора</span>
-</div>
+                  <span class="story-avatar" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <circle cx="12" cy="8" r="3.5"></circle>
+                      <path d="M5 21v-2a7 7 0 0 1 14 0v2"></path>
+                    </svg>
+                  </span>
+                  <span>Имя автора</span>
+                </div>
               </article>
-              <article class="story-card stack" role="group" aria-roledescription="слайд" aria-label="Отзыв 3 из 6">
+
+              <article class="story-card stack" role="group">
                 <div class="story-card-top flex items-center justify-between">
-<span class="story-quote" aria-hidden="true">“</span><span class="story-number">03</span>
-</div>
+                  <span class="story-quote" aria-hidden="true">“</span>
+                  <span class="story-number">03</span>
+                </div>
                 <p class="story-text">Здесь будет отзыв участника.</p>
                 <div class="story-lines" aria-hidden="true">
-<span></span><span></span>
-</div>
+                  <span></span>
+                  <span></span>
+                </div>
                 <div class="story-author flex items-center gap-3">
-<span class="story-avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 21v-2a7 7 0 0 1 14 0v2"></path></svg></span><span>Имя автора</span>
-</div>
+                  <span class="story-avatar" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <circle cx="12" cy="8" r="3.5"></circle>
+                      <path d="M5 21v-2a7 7 0 0 1 14 0v2"></path>
+                    </svg>
+                  </span>
+                  <span>Имя автора</span>
+                </div>
               </article>
-              <article class="story-card stack" role="group" aria-roledescription="слайд" aria-label="Отзыв 4 из 6">
+
+              <article class="story-card stack" role="group">
                 <div class="story-card-top flex items-center justify-between">
-<span class="story-quote" aria-hidden="true">“</span><span class="story-number">04</span>
-</div>
+                  <span class="story-quote" aria-hidden="true">“</span>
+                  <span class="story-number">04</span>
+                </div>
                 <p class="story-text">Здесь будет отзыв участника.</p>
                 <div class="story-lines" aria-hidden="true">
-<span></span><span></span>
-</div>
+                  <span></span>
+                  <span></span>
+                </div>
                 <div class="story-author flex items-center gap-3">
-<span class="story-avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 21v-2a7 7 0 0 1 14 0v2"></path></svg></span><span>Имя автора</span>
-</div>
+                  <span class="story-avatar" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <circle cx="12" cy="8" r="3.5"></circle>
+                      <path d="M5 21v-2a7 7 0 0 1 14 0v2"></path>
+                    </svg>
+                  </span>
+                  <span>Имя автора</span>
+                </div>
               </article>
-              <article class="story-card stack" role="group" aria-roledescription="слайд" aria-label="Отзыв 5 из 6">
+
+              <article class="story-card stack" role="group">
                 <div class="story-card-top flex items-center justify-between">
-<span class="story-quote" aria-hidden="true">“</span><span class="story-number">05</span>
-</div>
+                  <span class="story-quote" aria-hidden="true">“</span>
+                  <span class="story-number">05</span>
+                </div>
                 <p class="story-text">Здесь будет отзыв участника.</p>
                 <div class="story-lines" aria-hidden="true">
-<span></span><span></span>
-</div>
+                  <span></span>
+                  <span></span>
+                </div>
                 <div class="story-author flex items-center gap-3">
-<span class="story-avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 21v-2a7 7 0 0 1 14 0v2"></path></svg></span><span>Имя автора</span>
-</div>
+                  <span class="story-avatar" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <circle cx="12" cy="8" r="3.5"></circle>
+                      <path d="M5 21v-2a7 7 0 0 1 14 0v2"></path>
+                    </svg>
+                  </span>
+                  <span>Имя автора</span>
+                </div>
               </article>
-              <article class="story-card stack" role="group" aria-roledescription="слайд" aria-label="Отзыв 6 из 6">
+
+              <article class="story-card stack" role="group">
                 <div class="story-card-top flex items-center justify-between">
-<span class="story-quote" aria-hidden="true">“</span><span class="story-number">06</span>
-</div>
+                  <span class="story-quote" aria-hidden="true">“</span>
+                  <span class="story-number">06</span>
+                </div>
                 <p class="story-text">Здесь будет отзыв участника.</p>
                 <div class="story-lines" aria-hidden="true">
-<span></span><span></span>
-</div>
+                  <span></span>
+                  <span></span>
+                </div>
                 <div class="story-author flex items-center gap-3">
-<span class="story-avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 21v-2a7 7 0 0 1 14 0v2"></path></svg></span><span>Имя автора</span>
-</div>
+                  <span class="story-avatar" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <circle cx="12" cy="8" r="3.5"></circle>
+                      <path d="M5 21v-2a7 7 0 0 1 14 0v2"></path>
+                    </svg>
+                  </span>
+                  <span>Имя автора</span>
+                </div>
               </article>
+
             </div>
           </div>
+
+
           <div class="stories-controls flex items-center justify-center gap-4" hidden>
-            <button class="btn ghost btn-icon rounded-full carousel-control" type="button" data-carousel-prev aria-label="Предыдущий отзыв" aria-controls="stories-viewport"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m14 6-6 6 6 6M8 12h12"></path></svg></button>
-            <span class="carousel-counter" aria-hidden="true"><span data-carousel-current>01</span> / 06</span>
-            <button class="btn ghost btn-icon rounded-full carousel-control" type="button" data-carousel-next aria-label="Следующий отзыв" aria-controls="stories-viewport"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m10 6 6 6-6 6M16 12H4"></path></svg></button>
+            <button class="btn ghost btn-icon rounded-full carousel-control" type="button" data-carousel-prev aria-controls="stories-viewport">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                <path d="m14 6-6 6 6 6M8 12h12"></path>
+              </svg>
+            </button>
+
+            <div class="carousel-dots" role="group">
+              <button class="carousel-dot" type="button"></button>
+              <button class="carousel-dot" type="button"></button>
+              <button class="carousel-dot" type="button"></button>
+              <button class="carousel-dot" type="button"></button>
+              <button class="carousel-dot" type="button"></button>
+              <button class="carousel-dot" type="button"></button>
+            
+              <span data-carousel-current hidden>01</span>
+            </div>
+
+            <button class="btn ghost btn-icon rounded-full carousel-control" type="button" data-carousel-next aria-controls="stories-viewport">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                <path d="m10 6 6 6-6 6M16 12H4"></path>
+              </svg>
+            </button>
           </div>
+
           <span class="carousel-status" role="status" aria-live="polite" aria-atomic="true"></span>
+
         </div>
       </div>
     </section>
 
-    <!-- 07 — Final call to action -->
-    <section class="section final-cta" id="start" aria-labelledby="start-title">
-      <figure class="final-photo" aria-hidden="true"><img src="img/cape-town-coast.jpg" width="1536" height="864" alt="" loading="lazy" decoding="async"></figure><div class="container">
+    <!-- 07 — Start Test -->
+    <section class="section final-cta" id="start">
+      <figure class="final-photo" aria-hidden="true">
+        <img src="img/coast.webp" width="1942" height="809" alt="" loading="lazy" decoding="async">
+      </figure>
+      <span class="ornament final-ring" aria-hidden="true">
+        <img src="svg/ornament-ring.svg" alt="" loading="lazy" decoding="async">
+      </span>
+      <div class="container">
         <div class="final-panel stack items-center">
-<div class="final-copy stack items-center">
-<span class="section-marker" aria-hidden="true"></span>
-        <h2 id="start-title">Найдите причину, а не боритесь только с последствиями</h2>
-        <p>Выделите до 40 минут. Отвечайте честно. Сразу после теста вы получите свой персональный график.</p>
+          <div class="final-copy stack items-center text-balance">
+            <span class="section-marker" aria-hidden="true"></span>
+            <h2>Найдите причину, а не боритесь только с последствиями</h2>
+            <p>Выделите до 40 минут. Отвечайте честно. Сразу после теста вы получите свой персональный график.</p>
+          </div>
+          <div class="final-action stack items-center">
+            <a href="#" class="btn primary lg rounded-full">
+              Начать тест
+            </a>
+            <ul class="final-facts">
+              <li>200 вопросов</li>
+              <li>Ответы: да, возможно или нет</li>
+              <li>Тест и личный разбор бесплатно</li>
+            </ul>
+          </div>
         </div>
-<div class="final-action stack items-center">
-<a href="#" class="btn accent lg rounded-lg">Начать тест <span aria-hidden="true">→</span></a>
-      <ul class="final-facts">
-<li>200 вопросов</li>
-<li>Ответы: да, возможно или нет</li>
-<li>Тест и личный разбор бесплатно</li>
-</ul>
-        </div>
-</div>
-</div>
+      </div>
     </section>
+
   </main>
 
-  <footer class="site-footer"><div class="container flex row mobile-column gap-4 items-center justify-between">
-<span>©2026 All rights reserved.</span><small>Designed by Jacaranda Group</small>
-</div></footer>
+<!-- Footer -->
+  <footer class="footer border-top py-6">
+    <div class="container flex row mobile-column gap-4 items-center justify-between">
+      <span>©2026 All rights reserved.</span>
+      <span>Designed by Jacaranda Group</span>
+      <span>
+        <a href="#">Privacy policy</a>
+        &nbsp;|&nbsp;
+        <a href="#">Terms & Conditions</a>
+      </span>
+    </div>
+  </footer>
+
   <script defer src="src/inmarium.js"></script>
   <script defer src="src/site.js"></script>
+  <script defer src="lang.js"></script>
+
 </body>
 </html>
