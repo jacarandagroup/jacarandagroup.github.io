@@ -96,7 +96,10 @@
 /* SECTION 02 - PROBLEMS */
     .problem-grid li {display:flex; align-items:center;}
     .problem-grid i {font-size: 2.2rem;}
-    @media (max-width:560px) {.problem-grid i {display: none;}}
+
+    @media (max-width:560px) {
+      .problem-grid i {display: none;}
+    }
 
 /* SECTION 06 - SUCCESS STORIES */
 
@@ -358,7 +361,6 @@
 .final-facts li {color:#344334;}
 .site-footer {background-color:#f7efdf;}
 
-
 @media (max-width:1199.98px) {
   .hero-arc {width:51vw; right:1%; opacity:.55;}
   .section-weave-right {right:-87px; opacity:.11;}
@@ -473,7 +475,6 @@
   .stories-carousel {--slides-per-view:1; --story-width:100%;}
   .stories-track {grid-template-columns:1fr;}
   .story-card {min-height:235px; padding:26px;}
-  /* .stories-controls {margin-top:24px; gap:18px;} */
   .final-cta {padding-block:53px 43px;}
   .final-panel {gap:25px;}
   .final-copy {gap:21px;}
