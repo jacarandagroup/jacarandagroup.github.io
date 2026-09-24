@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="960" viewBox="0 0 240 960" color="#805A36" fill="none" role="img" aria-labelledby="right-title right-desc">
+  <title id="right-title">Right diagonal geometric ornament</title>
+  <desc id="right-desc">Contemporary African-inspired border redrawn from the terracotta right edge of the supplied WOCA reference: diagonal ribbons, nested triangles and lozenges. This is a decorative interpretation, not a named traditional symbol. Transparent background. Native editable vector paths. Change the root color attribute to recolor.</desc>
+<g stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter">
+<path d="M8 0V960" stroke-width="4"/>
+<g transform="translate(0 -320)">
+<path d="M28 -8 228 152 28 312" stroke-width="9"/>
+<path d="M28 26 187 152 28 278" stroke-width="5"/>
+<path d="M30 54 30 249 152 152Z" stroke-width="7"/>
+<path d="M49 91 119 151 49 211V183L87 151 49 119Z" fill="currentColor" stroke="none"/>
+<path d="M47 137 65 152 47 167Z" fill="currentColor" stroke="none"/>
+<path d="M238 191 79 318 238 445" stroke-width="8"/>
+<path d="M239 226 124 318 239 410" stroke-width="5"/>
+<path d="M224 259 151 318 224 377V351L186 318 224 287Z" fill="currentColor" stroke="none"/>
+<path d="M226 304 208 318 226 333Z" fill="currentColor" stroke="none"/>
+<path d="M213 71 229 84 213 97 197 84Z" fill="currentColor" stroke="none"/>
+<path d="M72 278 87 290 72 302 57 290Z" fill="currentColor" stroke="none"/>
+</g>
+<g transform="translate(0 0)">
+<path d="M28 -8 228 152 28 312" stroke-width="9"/>
+<path d="M28 26 187 152 28 278" stroke-width="5"/>
+<path d="M30 54 30 249 152 152Z" stroke-width="7"/>
+<path d="M49 91 119 151 49 211V183L87 151 49 119Z" fill="currentColor" stroke="none"/>
+<path d="M47 137 65 152 47 167Z" fill="currentColor" stroke="none"/>
+<path d="M238 191 79 318 238 445" stroke-width="8"/>
+<path d="M239 226 124 318 239 410" stroke-width="5"/>
+<path d="M224 259 151 318 224 377V351L186 318 224 287Z" fill="currentColor" stroke="none"/>
+<path d="M226 304 208 318 226 333Z" fill="currentColor" stroke="none"/>
+<path d="M213 71 229 84 213 97 197 84Z" fill="currentColor" stroke="none"/>
+<path d="M72 278 87 290 72 302 57 290Z" fill="currentColor" stroke="none"/>
+</g>
+<g transform="translate(0 320)">
+<path d="M28 -8 228 152 28 312" stroke-width="9"/>
+<path d="M28 26 187 152 28 278" stroke-width="5"/>
+<path d="M30 54 30 249 152 152Z" stroke-width="7"/>
+<path d="M49 91 119 151 49 211V183L87 151 49 119Z" fill="currentColor" stroke="none"/>
+<path d="M47 137 65 152 47 167Z" fill="currentColor" stroke="none"/>
+<path d="M238 191 79 318 238 445" stroke-width="8"/>
+<path d="M239 226 124 318 239 410" stroke-width="5"/>
+<path d="M224 259 151 318 224 377V351L186 318 224 287Z" fill="currentColor" stroke="none"/>
+<path d="M226 304 208 318 226 333Z" fill="currentColor" stroke="none"/>
+<path d="M213 71 229 84 213 97 197 84Z" fill="currentColor" stroke="none"/>
+<path d="M72 278 87 290 72 302 57 290Z" fill="currentColor" stroke="none"/>
+</g>
+<g transform="translate(0 640)">
+<path d="M28 -8 228 152 28 312" stroke-width="9"/>
+<path d="M28 26 187 152 28 278" stroke-width="5"/>
+<path d="M30 54 30 249 152 152Z" stroke-width="7"/>
+<path d="M49 91 119 151 49 211V183L87 151 49 119Z" fill="currentColor" stroke="none"/>
+<path d="M47 137 65 152 47 167Z" fill="currentColor" stroke="none"/>
+<path d="M238 191 79 318 238 445" stroke-width="8"/>
+<path d="M239 226 124 318 239 410" stroke-width="5"/>
+<path d="M224 259 151 318 224 377V351L186 318 224 287Z" fill="currentColor" stroke="none"/>
+<path d="M226 304 208 318 226 333Z" fill="currentColor" stroke="none"/>
+<path d="M213 71 229 84 213 97 197 84Z" fill="currentColor" stroke="none"/>
+<path d="M72 278 87 290 72 302 57 290Z" fill="currentColor" stroke="none"/>
+</g>
+<g transform="translate(0 960)">
+<path d="M28 -8 228 152 28 312" stroke-width="9"/>
+<path d="M28 26 187 152 28 278" stroke-width="5"/>
+<path d="M30 54 30 249 152 152Z" stroke-width="7"/>
+<path d="M49 91 119 151 49 211V183L87 151 49 119Z" fill="currentColor" stroke="none"/>
+<path d="M47 137 65 152 47 167Z" fill="currentColor" stroke="none"/>
+<path d="M238 191 79 318 238 445" stroke-width="8"/>
+<path d="M239 226 124 318 239 410" stroke-width="5"/>
+<path d="M224 259 151 318 224 377V351L186 318 224 287Z" fill="currentColor" stroke="none"/>
+<path d="M226 304 208 318 226 333Z" fill="currentColor" stroke="none"/>
+<path d="M213 71 229 84 213 97 197 84Z" fill="currentColor" stroke="none"/>
+<path d="M72 278 87 290 72 302 57 290Z" fill="currentColor" stroke="none"/>
+</g>
+</g>
+</svg>
