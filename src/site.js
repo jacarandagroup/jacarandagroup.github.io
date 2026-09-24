@@ -8,6 +8,26 @@
     if (count < 2) return;
 
     const current = carousel.querySelector('[data-carousel-current]');
+    const dots = [...carousel.querySelectorAll('.carousel-dot')];
+
+      dots.forEach((dot, targetIndex) => {
+        dot.setAttribute('aria-controls', viewport.id);
+
+        dot.addEventListener('click', () => {
+          // Последнее нажатие определяет нужную карточку.
+          queue.length = 0;
+
+          let distance = (targetIndex - index + count) % count;
+
+          if (distance > count / 2) {
+            distance -= count;
+          }
+
+          if (distance !== 0) {
+            move(distance);
+          }
+        });
+      });
     const status = carousel.querySelector('.carousel-status');
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     let index = 0;
@@ -43,6 +63,9 @@
       });
       current.textContent = String(index + 1).padStart(2, '0');
       carousel.dataset.index = String(index);
+      dots.forEach((dot, dotIndex) => {
+        dot.setAttribute('aria-current', String(dotIndex === index));
+      });
       const labels = Array.from({length: visible}, (_, offset) => wrap(index + offset) + 1);
       status.textContent = visible === 1
         ? 'Отзыв ' + labels[0] + ' из ' + count
