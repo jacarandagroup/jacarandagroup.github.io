@@ -107,6 +107,7 @@ h2 { font-size: clamp(2rem, 7vw, 2.5rem); line-height: 1.15; letter-spacing: -.0
 .hero-copy { padding-block: 60px 66px; }
 .hero .eyebrow { font-size: .73rem; letter-spacing: .16em; color: #965027; }
 .hero-lead { font-size: 1.04rem; line-height: 1.65; max-width: 595px; }
+.hero-mobile-facts { display: none; }
 
 /* 02 — Problems */
 .problem-grid i { font-size: 2.2rem; }
@@ -240,8 +241,13 @@ h2 { font-size: clamp(2rem, 7vw, 2.5rem); line-height: 1.15; letter-spacing: -.0
   .hero .eyebrow { font-size: .66rem; letter-spacing: .13em; }
   .hero-lead { max-width: 650px; }
   .hero-photo { position: relative; inset: auto; z-index: 0; order: 1; height: clamp(270px, 65vw, 450px); }
-  .hero-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, #f7eedf 0%, rgba(247, 238, 223, 0) 18%); pointer-events: none; }
-  .hero-photo img { object-position: center 30%; }
+  .hero-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, #f7eedf 0%, rgba(247, 238, 223, 0) 18%); pointer-events: none; z-index: 2;}
+  .hero-photo img { object-position: left 30%; }
+  .hero-desktop-facts {display: none;}
+  .hero-mobile-facts {position: absolute; display: flex; flex-direction: column; left: var(--container-padding); top: 45%; transform: translateY(-50%); width: 52%; max-width: 350px; gap: .9rem; z-index: 3;}
+  .hero-mobile-facts span {display: flex; align-items: flex-start; gap: .5rem; color: var(--heading); font-size: 1.1rem; font-weight: 500; line-height: 1.3;}
+  .hero-mobile-facts small {font: inherit;}
+  .hero-mobile-facts i {flex: none; width: 16px; margin-top: .1rem; color: var(--primary);}
   .problem-grid { row-gap: var(--space-6); }
   .problem-grid li { font-size: .96rem; gap: var(--space-3); padding-inline: var(--space-4); }
   .insight-layout.container { grid-template-columns: 1fr; }
@@ -276,6 +282,10 @@ h2 { font-size: clamp(2rem, 7vw, 2.5rem); line-height: 1.15; letter-spacing: -.0
   .final-facts { border-radius: var(--radius-lg); padding-block: var(--space-3); }
   .final-facts li { font-size: .82rem; }
   .final-facts li + li::before { display: none; }
+}
+
+@media (max-width: 639.98px) {
+   .hero-mobile-facts span {font-size: 0.9rem;}
 }
 
 @media (max-width: 480px) {
