@@ -15,118 +15,173 @@
 <body id="top">
 
 <!-- Header -->
-  <header class="header shadow-sm sticky z-100 top-0 py-4">
+  <header class="header fixed z-100 top-0 py-4 left-0 right-0 border-bottom backdrop-blur">
     <div class="container">
 
       <div class="flex row items-center justify-between">
 
         <a class="brand" href="#top">OXFORD CAPACITY ANALYSIS</a>
 
-        <!-- <nav class="nav flex row">
-          <ul>
-            <li>1</li>
-            <li>2</li>
-          </ul>
-        </nav> -->
+        <nav class="nav desktop-nav flex items-center gap-10 mobile-hidden">
+          <a href="#process" data-i18n="header_work" class="relative medium no-underline"></a>
+          <a href="#result" data-i18n="header_result" class="relative medium no-underline"></a>
+          <a href="#success" data-i18n="header_success" class="relative medium no-underline"></a>
+        </nav>
 
-        <div class="flex items-center gap-4">
-          <div class="dropdown">
-            <button class="btn-lang"><i class="fa-solid fa-language"></i></button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item lang-btn active" data-lang="en">EN</a>
-              <a class="dropdown-item lang-btn" data-lang="af">AF</a>
-              <a class="dropdown-item lang-btn" data-lang="zu">ZU</a>
-              <a class="dropdown-item lang-btn" data-lang="ru">RU</a>
+        <div class="header-actions flex items-center gap-4">
+
+        <!-- Language -->
+          <div class="language-picker relative">
+
+            <button class="language-picker-toggle flex items-center gap-2 py-2 px-1 semibold pointer" type="button" aria-expanded="false" aria-haspopup="true">
+              <span class="language-current">EN</span>
+              <span class="language-chevron" aria-hidden="true"><i class="fa-solid fa-caret-down"></i></span>
+            </button>
+          
+            <div class="language-menu absolute right-0 p-2 border rounded-md z-100" hidden>
+              <button type="button" data-lang="en" class="lang-btn active flex items-center justify-between w-full p-3 rounded-md pointer">
+                <span>English</span>
+              </button>
+          
+              <!-- <button type="button" data-lang="af" class="lang-btn">
+                <span>Afrikaans</span>
+              </button>
+          
+              <button type="button" data-lang="zu" class="lang-btn">
+                <span>isiZulu</span>
+              </button> -->
+          
+              <button type="button" data-lang="ru" class="lang-btn flex items-center justify-between w-full p-3 rounded-md pointer">
+                <span>Русский</span>
+              </button>
             </div>
           </div>
+        
+        <!-- CTA -->
+          <a class="btn primary rounded-full desktop-cta mobile-hidden" href="#start" data-i18n="header_start"></a>
 
-          <a class="btn primary rounded-full" href="#start">Start Test</a>
+        <!-- Burger -->
+          <button class="burger-button pointer p-2 hidden mobile-block" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+            <span class="block rounded-xs"></span>
+            <span class="block rounded-xs"></span>
+            <span class="block rounded-xs"></span>
+          </button>
+
         </div>
       </div>
-      
     </div>
   </header>
 
+<!-- Mobile menu -->
+  <div class="mobile-menu hidden mobile-block fixed right-0 bottom-0 left-0 overflow-hidden border-top" id="mobile-menu" hidden>
+    <div class="container flex column h-full pt-8">
+  
+      <nav class="mobile-nav flex column">
+        <a href="#process" data-i18n="header_work" class="py-4 px-0 medium no-underline border-bottom"></a>
+        <a href="#result" data-i18n="header_result" class="py-4 px-0 medium no-underline border-bottom"></a>
+        <a href="#success" data-i18n="header_success" class="py-4 px-0 medium no-underline border-bottom"></a>
+      </nav>
+  
+      <a class="btn primary rounded-full mobile-menu-cta w-full" href="#start" data-i18n="header_start"></a>
+  
+    </div>
+  </div>
+
   <main>
     <!-- 01 — Hero -->
-    <section class="section hero">
+    <section class="section hero relative p-0 overflow-hidden mobile-flex mobile-column">
 
-      <!-- <span class="ornament hero-weave-left" aria-hidden="true">
-        <img src="svg/ornament-right.svg" alt="" loading="lazy" decoding="async">
-      </span> -->
+      <figure class="hero-photo absolute inset-0 overflow-hidden">
+        <img src="img/hero.webp" width="1672" height="941" fetchpriority="high" class="img-cover">
+      </figure>
 
-      <div class="container hero-inner">
-        <div class="hero-layout grid cols-2 mobile-cols-1 items-center">
+      <div class="container hero-inner relative">
+        <div class="hero-layout grid cols-2 mobile-cols-1 items-center gap-0 mobile-block">
 
-          <div class="hero-copy stack">
+          <div class="hero-copy stack gap-6 items-start px-0">
 
-            <p class="eyebrow">Oxford Capacity Analysis</p>
-            <h1 class="max-w-2xl">Что на самом деле мешает вам жить так, как&nbsp;вы&nbsp;хотите?</h1>
-            <p class="hero-lead">Если проблемы возвращаются, несмотря на все ваши попытки их решить, значит, вы до сих пор не видите, что на самом деле их вызывает. Бесплатный тест и индивидуальный разбор помогут найти скрытые причины финансовых трудностей, конфликтов, тревоги, неуверенности и повторяющихся неприятностей.</p>
+            <p class="eyebrow medium uppercase">Oxford Capacity Analysis</p>
+            <h1 class="normal content-wide" data-i18n="hero_h1"></h1>
+            <p class="hero-lead" data-i18n="hero_p"></p>
 
-            <a href="#start" class="btn primary lg rounded-full">Начать бесплатный тест <span aria-hidden="true">→</span></a>
+            <a href="#start" class="btn primary lg rounded-full">
+              <span data-i18n="hero_btn"></span>
+              <span aria-hidden="true">→</span>
+            </a>
 
-            <div class="grid cols-2 gap-2">
-              <small><i class="fa-regular fa-clock"></i> Выделите до 40 минут</small>
-              <small><i class="fa-solid fa-list-check"></i> Тест бесплатно</small>
-              <small><i class="fa-solid fa-chart-area"></i> Готовый график сразу после теста</small>
-              <small><i class="fa-solid fa-user-group"></i> Личный разбор в Кьялами бесплатно</small>
+            <div class="grid cols-2 gap-2 hero-mobile-facts">
+              <span>
+                <i class="fa-regular fa-clock mr-1"></i>
+                <small data-i18n="hero_40min"></small>
+              </span>
+              <span>
+                <i class="fa-solid fa-list-check mr-1"></i>
+                <small data-i18n="hero_free"></small></span>
+              <span>
+                <i class="fa-solid fa-chart-area mr-1"></i>
+                <small data-i18n="hero_graph"></small>
+              </span>
+              <span>
+                <i class="fa-solid fa-user-group mr-1"></i>
+                <small data-i18n="hero_kya"></small>
+              </span>
             </div>
+
           </div>
         </div>
       </div>
     </section>
 
     <!-- 02 — Problems -->
-    <section class="section bg-brown-50">
+    <section class="section bg-brown-50 relative overflow-hidden">
       <div class="container">
 
-        <div class="max-w-2xl mb-12">
-          <span class="section-marker" aria-hidden="true"></span>
-          <h2>Вы пытаетесь изменить ситуации. Но&nbsp;ничего не меняется</h2>
+        <div class="mb-12 content-wide">
+          <span class="section-marker block mb-5" aria-hidden="true"></span>
+          <h2 data-i18n="problems_title" class="normal"></h2>
         </div>
           
-        <ul class="problem-grid grid cols-4 tablet-cols-2 mobile-cols-2 gap-8">
-          <li class="gap-3 pl-0 px-5">
-            <i class="fa-solid fa-wallet"></i>
-            <span>Денег постоянно не&nbsp;хватает</span>
+        <ul class="problem-grid grid cols-4 tablet-cols-2 mobile-cols-2 gap-8 m-0 p-0">
+          <li class="gap-3 px-5 flex items-center">
+            <i class="fa-solid fa-wallet mobile-hidden"></i>
+            <span data-i18n="problem_money"></span>
           </li>
-          <li class="border-left gap-3 px-5">
-            <i class="fa-solid fa-business-time"></i>
-            <span>Работу сложно найти и&nbsp;сохранить</span>
+          <li class="border-left gap-3 px-5 flex items-center">
+            <i class="fa-solid fa-business-time mobile-hidden"></i>
+            <span data-i18n="problem_work"></span>
           </li>
-          <li class="border-left gap-3 px-5">
-            <i class="fa-solid fa-head-side-virus"></i>
-            <span>Тревога мешает принимать решения</span>
+          <li class="border-left gap-3 px-5 flex items-center">
+            <i class="fa-solid fa-head-side-virus mobile-hidden"></i>
+            <span data-i18n="problem_anxiety"></span>
           </li>
-          <li class="border-left gap-3 pr-0 px-5">
-            <i class="fa-solid fa-square-person-confined"></i>
-            <span>Не хватает уверенности в&nbsp;себе</span>
+          <li class="border-left gap-3 px-5 flex items-center">
+            <i class="fa-solid fa-square-person-confined mobile-hidden"></i>
+            <span data-i18n="problem_confidence"></span>
           </li>
-          <li class="gap-3 pl-0 px-5">
-            <i class="fa-solid fa-comments"></i>
-            <span>В отношениях повторяются конфликты</span>
+          <li class="gap-3 px-5 flex items-center">
+            <i class="fa-solid fa-comments mobile-hidden"></i>
+            <span data-i18n="problem_relationships"></span>
           </li>
-          <li class="border-left gap-3 px-5">
-            <i class="fa-solid fa-handshake"></i>
-            <span>Трудно понять, кому доверять</span>
+          <li class="border-left gap-3 px-5 flex items-center">
+            <i class="fa-solid fa-handshake mobile-hidden"></i>
+            <span data-i18n="problem_trust"></span>
           </li>
-          <li class="border-left gap-3 px-5">
-            <i class="fa-solid fa-crown"></i>
-            <span>Успех постоянно ускользает</span>
+          <li class="border-left gap-3 px-5 flex items-center">
+            <i class="fa-solid fa-crown mobile-hidden"></i>
+            <span data-i18n="problem_success"></span>
           </li>
-          <li class="border-left gap-3 pr-0 px-5">
-            <i class="fa-solid fa-house-chimney-crack"></i>
-            <span>Проблемы близких разрушают семью</span>
+          <li class="border-left gap-3 px-5 flex items-center">
+            <i class="fa-solid fa-house-chimney-crack mobile-hidden"></i>
+            <span data-i18n="problem_family"></span>
           </li>
         </ul>
 
         <div class="border-top pt-10 mt-10 gap-8">
-          <div class="toast primary flex row w-full items-center justify-between mobile-column ">
-            <div class="toast-body max-w-2xl">
-              <strong>Проблема возвращается, пока её настоящая причина остаётся незамеченной.</strong>
+          <div class="toast primary flex row w-full items-center justify-between mobile-column rounded-none shadow-md">
+            <div class="toast-body content-wide">
+              <strong data-i18n="problems_conclusion"></strong>
             </div>
-            <a href="#start" class="btn outline lg rounded-full">Узнать, что я не замечаю <span aria-hidden="true">→</span></a>
+            <a href="#start" class="btn outline lg rounded-full bg-surface"><span data-i18n="problems_cta"></span> <span class="mobile-hidden" aria-hidden="true">→</span></a>
           </div>
         </div>
 
@@ -134,140 +189,132 @@
     </section>
 
     <!-- 03 — Insight -->
-    <section class="section insight">
-      <div class="container insight-layout grid cols-2 mobile-cols-1 gap-8 items-center">
+    <section class="section insight relative overflow-hidden p-0">
+      <div class="container insight-layout grid cols-2 mobile-cols-1 p-0 gap-0 items-stretch">
 
-        <figure class="insight-photo">
-          <img src="img/insight-woman.webp" width="1448" height="1086" alt="Иллюстративный портрет женщины в тёплом свете заката" loading="lazy" decoding="async">
+        <figure class="insight-photo relative z-0 overflow-hidden">
+          <img src="img/insight-woman.webp" width="1448" height="1086" alt="" data-i18n-alt="insight_image_alt" loading="lazy" decoding="async" class="img-cover">
         </figure>
 
-        <div class="insight-copy stack">
+        <div class="insight-copy stack relative justify-center py-16">
 
-          <div class="max-w-2xl">
-            <span class="section-marker" aria-hidden="true"></span>
-            <h2 id="insight-title">Если бы вы знали настоящую причину, вы уже могли бы с ней что-то сделать</h2>
+          <div class="content-wide">
+            <span class="section-marker block mb-5" aria-hidden="true"></span>
+            <h2 id="insight-title" data-i18n="insight_title" class="normal"></h2>
           </div>
           
           <div class="insight-paragraphs stack gap-4">
-            <p>Вы можете думать, что всему виной партнёр, начальник, нехватка денег или плохие обстоятельства.</p>
-            <p>Но люди и обстоятельства меняются, а проблема часто повторяется или остаётся.</p>
+            <p data-i18n="insight_p1"></p>
+            <p data-i18n="insight_p2"></p>
 
             <div>
-              <div class="toast primary">
+              <div class="toast primary items-center rounded-none shadow-md">
                 <div class="toast-body">
-                  <strong>Значит, вы видите последствия, но не то, что снова к ним приводит.</strong>
+                  <strong data-i18n="insight_conclusion"></strong>
                 </div>
               </div>
             </div>
 
             <div>
-              <a href="#start" class="btn outline lg rounded-full">Найти настоящую причину <span aria-hidden="true">→</span></a>
+              <a href="#start" class="btn outline lg rounded-full bg-surface"><span data-i18n="insight_cta"></span> <span class="mobile-hidden" aria-hidden="true">→</span></a>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- <span class="ornament protea" aria-hidden="true">
-        <img src="svg/protea-clipart.svg" alt="" loading="lazy" decoding="async">
-      </span> -->
     </section>
 
     <!-- 04 — Process -->
-    <section class="section bg-brown-50">
+    <section class="section bg-brown-50 relative overflow-hidden" id="process">
       
       <div class="container">
 
-        <div class="max-w-2xl mb-12">
-          <span class="section-marker" aria-hidden="true"></span>
-          <h2 id="process-title" class="text-balance">Пройдите тест. Получите график. Узнайте настоящую причину</h2>
+        <div class="mb-12 content-wide">
+          <span class="section-marker block mb-5" aria-hidden="true"></span>
+          <h2 id="process-title" class="text-balance normal" data-i18n="process_title"></h2>
         </div>
 
-        <div class="steps grid cols-3 mobile-cols-1 gap-5">
+        <div class="steps grid mobile-cols-1 cols-3 gap-12">
 
-          <div class="step-card stack gap-4">
-            <div class="step-top flex items-center">
-              <span class="step-number text-xl">1</span>
-              <h5 class="step-title">Пройдите тест</h5>
+          <div class="step-card stack relative p-0 gap-3">
+            <div class="step-top flex items-center gap-6 mb-2">
+              <span class="step-number text-xl grid place-center no-shrink rounded-full white">1</span>
+              <h5 class="step-title medium" data-i18n="process_step1_title"></h5>
             </div>
-            <p>Ответьте на вопросы о своих реакциях,&nbsp;решениях&nbsp;и&nbsp;поступках.</p>
+            <p data-i18n="process_step1_text"></p>
           </div>
 
-          <div class="step-card stack gap-4">
-            <div class="step-top flex items-center">
-              <span class="step-number text-xl">2</span>
-              <h5 class="step-title">Сразу получите график</h5>
+          <div class="step-card stack relative p-0 gap-3">
+            <div class="step-top flex items-center gap-6 mb-2">
+              <span class="step-number text-xl grid place-center no-shrink rounded-full white">2</span>
+              <h5 class="step-title medium" data-i18n="process_step2_title"></h5>
             </div>
-            <p>Увидьте свой индивидуальный профиль по&nbsp;десяти характеристикам личности.</p>
+            <p data-i18n="process_step2_text"></p>
           </div>
 
-          <div class="step-card stack gap-4">
-            <div class="step-top flex items-center">
-              <span class="step-number text-xl">3</span>
-              <h5 class="step-title">Получите профессиональный разбор</h5>
+          <div class="step-card stack relative p-0 gap-3">
+            <div class="step-top flex items-center gap-6 mb-2">
+              <span class="step-number text-xl grid place-center no-shrink rounded-full white">3</span>
+              <h5 class="step-title medium" data-i18n="process_step3_title"></h5>
             </div>
-            <p>Специалист интерпретирует сочетание показателей и&nbsp;покажет, что снова приводит вас&nbsp;к&nbsp;одним и тем же проблемам.</p>
+            <p data-i18n="process_step3_text"></p>
           </div>
 
         </div>
 
-        <div class="process-conclusion">
-          <div class="toast primary flex w-full items-center justify-between mobile-column">
-            <div class="toast-body">Именно сочетание точек позволяет увидеть то,&nbsp;чего человек не замечает сам:<br>
-              <strong>скрытую причину повторяющихся трудностей.</strong>
-            </div>
-            <a href="#start" class="btn primary lg rounded-full">Пройти тест и получить разбор <span aria-hidden="true">→</span></a>
+        <div class="process-conclusion flex row tablet-column items-center gap-12 mt-10 pt-8">
+          <div class="toast primary flex w-full items-center justify-between mobile-column rounded-none shadow-md">
+            <div class="toast-body" data-i18n="process_conclusion"></div>
+            <a href="#start" class="btn primary lg rounded-full"><span data-i18n="process_cta"></span> <span class="mobile-hidden" aria-hidden="true">→</span></a>
           </div>
         </div>
       </div>
-      <span class="ornament ornament-ring-4" aria-hidden="true">
-        <img src="svg/ornament-ring.svg" alt="" loading="lazy" decoding="async">
+      <span class="ornament ornament-ring-4 mobile-hidden absolute pointer-none no-select overflow-hidden right-0 w-auto bottom-0" aria-hidden="true">
+        <img src="svg/ornament-ring.svg" alt="" loading="lazy" decoding="async" class="img-cover">
       </span>
     </section>
 
     <!-- 05 — Offer -->
-    <section class="section offer">
+    <section class="section offer relative overflow-hidden" id="result">
 
-      <figure class="offer-photo" aria-hidden="true">
-        <img src="img/analysis-landscape.webp" width="1672" height="941" alt="" loading="lazy" decoding="async">
+      <figure class="offer-photo absolute inset-0" aria-hidden="true">
+        <img src="img/analysis-landscape.webp" width="1672" height="941" alt="" loading="lazy" decoding="async" class="img-cover">
       </figure>
-      <span class="ornament offer-weave-left" aria-hidden="true">
-        <img src="svg/ornament-left.svg" alt="" loading="lazy" decoding="async">
-      </span>
-      <span class="ornament ornament-ring" aria-hidden="true">
-        <img src="svg/ornament-ring.svg" alt="" loading="lazy" decoding="async">
+
+      <span class="ornament ornament-ring mobile-hidden absolute pointer-none no-select overflow-hidden right-0 w-auto top-0" aria-hidden="true">
+        <img src="svg/ornament-ring.svg" alt="" loading="lazy" decoding="async" class="img-cover">
       </span>
 
 
       <div class="container">
         
-        <div class="offer-layout grid cols-2 mobile-cols-1 gap-12 items-center">
-          <div class="offer-copy stack gap-8">
+        <div class="offer-layout grid cols-2 mobile-cols-1 items-center gap-16">
+          <div class="offer-copy stack">
 
-            <div class="max-w-2xl">
-              <span class="section-marker" aria-hidden="true"></span>
-              <h2 class="white">Полный индивидуальный анализ бесплатно</h2>
+            <div class="content-wide">
+              <span class="section-marker block mb-5" aria-hidden="true"></span>
+              <h2 class="white normal" data-i18n="offer_title"></h2>
             </div>
             
-            <ul class="offer-list">
-              <li>Oxford Capacity Analysis</li>
-              <li>Персональный график сразу после теста</li>
-              <li>Профессиональная интерпретация результатов</li>
-              <li>Личная встреча продолжительностью до одного часа</li>
-              <li>Место проведения - Кьялами</li>
+            <ul class="offer-list grid gap-3 m-0 p-0">
+              <li class="flex gap-3 items-start">Oxford Capacity Analysis</li>
+              <li data-i18n="offer_graph" class="flex gap-3 items-start"></li>
+              <li data-i18n="offer_interpretation" class="flex gap-3 items-start"></li>
+              <li data-i18n="offer_meeting" class="flex gap-3 items-start"></li>
+              <li data-i18n="offer_location" class="flex gap-3 items-start"></li>
             </ul>
 
-            <div class="pricing grid cols-2 gap-4">
-              <p>Тест - <strong>R0</strong></p>
-              <p>Личный разбор - <strong>R0</strong></p>
+            <div class="pricing grid cols-2 gap-6 py-4">
+              <p data-i18n="offer_price_test"></p>
+              <p data-i18n="offer_price_review"></p>
             </div>
 
             <a href="#start" class="btn primary lg rounded-full self-start">
-              Получить бесплатный анализ <span aria-hidden="true">→</span>
+              <span data-i18n="offer_cta"></span> <span class="mobile-hidden" aria-hidden="true">→</span>
             </a>
           </div>
 
-          <figure class="graph-frame">
-            <img src="img/oca-graph.png" alt="График Oxford Capacity Analysis с десятью характеристиками" loading="lazy" width="1445" height="1088">
+          <figure class="graph-frame p-4 border rounded-md">
+            <img src="img/oca-graph.png" alt="" data-i18n-alt="offer_graph_alt" loading="lazy" width="1445" height="1088" class="w-full">
           </figure>
 
         </div>
@@ -275,143 +322,142 @@
     </section>
 
     <!-- 06 — Success Stories -->
-    <section class="section stories">
+    <section class="section stories relative overflow-hidden" id="success">
 
       <div class="container">
 
-        <div class="text-balance max-w-2xl mb-12">
-          <span class="section-marker" aria-hidden="true"></span>
-          <h2 id="stories-title">Что люди поняли после индивидуального разбора</h2>
+        <div class="text-balance mb-12 content-wide">
+          <span class="section-marker block mb-5" aria-hidden="true"></span>
+          <h2 id="stories-title" data-i18n="stories_title" class="normal"></h2>
         </div>
 
-        <div class="stories-carousel" data-carousel role="group" tabindex="0">
+        <div class="stories-carousel relative min-w-0" data-carousel role="group" tabindex="0">
           <div class="stories-viewport" id="stories-viewport">
-            <div class="stories-track">
+            <div class="stories-track grid cols-3 tablet-cols-2 mobile-cols-1 gap-5 items-stretch">
 
-              <article class="story-card stack" role="group">
+              <article class="story-card stack min-w-0 border rounded-md gap-4" role="group">
                 <div class="story-card-top flex items-center justify-between">
                   <span class="story-quote" aria-hidden="true">“</span>
-                  <span class="story-number">01</span>
                 </div>
-                <p class="story-text">Здесь будет отзыв участника.</p>
-                <div class="story-lines" aria-hidden="true">
+                <p class="story-text leading-normal" data-i18n="story_1_text"></p>
+                <div class="story-lines hidden" aria-hidden="true">
                   <span></span>
                   <span></span>
                 </div>
                 
-                <div class="story-author flex items-center gap-3">
-                  <span class="story-avatar" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                      <circle cx="12" cy="8" r="3.5"></circle>
-                      <path d="M5 21v-2a7 7 0 0 1 14 0v2"></path>
-                    </svg>
+                <div class="story-author flex items-center gap-3 pt-5 border-top">
+                  <span class="story-avatar grid place-center no-shrink border rounded-full" aria-hidden="true">
+                    <i class="fa-regular fa-user"></i>
                   </span>
-                  <span>Имя автора</span>
+                  <div class="flex column">
+                    <span data-i18n="story_1_author"></span>
+                    <small data-i18n="story_1_city"></small>
+                  </div>
                 </div>
               </article>
 
-              <article class="story-card stack" role="group">
+              <article class="story-card stack min-w-0 border rounded-md gap-4" role="group">
                 <div class="story-card-top flex items-center justify-between">
                   <span class="story-quote" aria-hidden="true">“</span>
-                  <span class="story-number">02</span>
                 </div>
-                <p class="story-text">Здесь будет отзыв участника.</p>
-                <div class="story-lines" aria-hidden="true">
+                <p class="story-text leading-normal" data-i18n="story_2_text"></p>
+                <div class="story-lines hidden" aria-hidden="true">
                   <span></span>
                   <span></span>
                 </div>
-                <div class="story-author flex items-center gap-3">
-                  <span class="story-avatar" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                      <circle cx="12" cy="8" r="3.5"></circle>
-                      <path d="M5 21v-2a7 7 0 0 1 14 0v2"></path>
-                    </svg>
+                
+                <div class="story-author flex items-center gap-3 pt-5 border-top">
+                  <span class="story-avatar grid place-center no-shrink border rounded-full" aria-hidden="true">
+                    <i class="fa-regular fa-user"></i>
                   </span>
-                  <span>Имя автора</span>
+                  <div class="flex column">
+                    <span data-i18n="story_2_author"></span>
+                    <small data-i18n="story_2_city"></small>
+                  </div>
                 </div>
               </article>
 
-              <article class="story-card stack" role="group">
+              <article class="story-card stack min-w-0 border rounded-md gap-4" role="group">
                 <div class="story-card-top flex items-center justify-between">
                   <span class="story-quote" aria-hidden="true">“</span>
-                  <span class="story-number">03</span>
                 </div>
-                <p class="story-text">Здесь будет отзыв участника.</p>
-                <div class="story-lines" aria-hidden="true">
+                <p class="story-text leading-normal" data-i18n="story_3_text"></p>
+                <div class="story-lines hidden" aria-hidden="true">
                   <span></span>
                   <span></span>
                 </div>
-                <div class="story-author flex items-center gap-3">
-                  <span class="story-avatar" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                      <circle cx="12" cy="8" r="3.5"></circle>
-                      <path d="M5 21v-2a7 7 0 0 1 14 0v2"></path>
-                    </svg>
+                
+                <div class="story-author flex items-center gap-3 pt-5 border-top">
+                  <span class="story-avatar grid place-center no-shrink border rounded-full" aria-hidden="true">
+                    <i class="fa-regular fa-user"></i>
                   </span>
-                  <span>Имя автора</span>
+                  <div class="flex column">
+                    <span data-i18n="story_3_author"></span>
+                    <small data-i18n="story_3_city"></small>
+                  </div>
                 </div>
               </article>
 
-              <article class="story-card stack" role="group">
+              <article class="story-card stack min-w-0 border rounded-md gap-4" role="group">
                 <div class="story-card-top flex items-center justify-between">
                   <span class="story-quote" aria-hidden="true">“</span>
-                  <span class="story-number">04</span>
                 </div>
-                <p class="story-text">Здесь будет отзыв участника.</p>
-                <div class="story-lines" aria-hidden="true">
+                <p class="story-text leading-normal" data-i18n="story_4_text"></p>
+                <div class="story-lines hidden" aria-hidden="true">
                   <span></span>
                   <span></span>
                 </div>
-                <div class="story-author flex items-center gap-3">
-                  <span class="story-avatar" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                      <circle cx="12" cy="8" r="3.5"></circle>
-                      <path d="M5 21v-2a7 7 0 0 1 14 0v2"></path>
-                    </svg>
+                
+                <div class="story-author flex items-center gap-3 pt-5 border-top">
+                  <span class="story-avatar grid place-center no-shrink border rounded-full" aria-hidden="true">
+                    <i class="fa-regular fa-user"></i>
                   </span>
-                  <span>Имя автора</span>
+                  <div class="flex column">
+                    <span data-i18n="story_4_author"></span>
+                    <small data-i18n="story_4_city"></small>
+                  </div>
                 </div>
               </article>
 
-              <article class="story-card stack" role="group">
+              <article class="story-card stack min-w-0 border rounded-md gap-4" role="group">
                 <div class="story-card-top flex items-center justify-between">
                   <span class="story-quote" aria-hidden="true">“</span>
-                  <span class="story-number">05</span>
                 </div>
-                <p class="story-text">Здесь будет отзыв участника.</p>
-                <div class="story-lines" aria-hidden="true">
+                <p class="story-text leading-normal" data-i18n="story_5_text"></p>
+                <div class="story-lines hidden" aria-hidden="true">
                   <span></span>
                   <span></span>
                 </div>
-                <div class="story-author flex items-center gap-3">
-                  <span class="story-avatar" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                      <circle cx="12" cy="8" r="3.5"></circle>
-                      <path d="M5 21v-2a7 7 0 0 1 14 0v2"></path>
-                    </svg>
+                
+                <div class="story-author flex items-center gap-3 pt-5 border-top">
+                  <span class="story-avatar grid place-center no-shrink border rounded-full" aria-hidden="true">
+                    <i class="fa-regular fa-user"></i>
                   </span>
-                  <span>Имя автора</span>
+                  <div class="flex column">
+                    <span data-i18n="story_5_author"></span>
+                    <small data-i18n="story_5_city"></small>
+                  </div>
                 </div>
               </article>
 
-              <article class="story-card stack" role="group">
+              <article class="story-card stack min-w-0 border rounded-md gap-4" role="group">
                 <div class="story-card-top flex items-center justify-between">
                   <span class="story-quote" aria-hidden="true">“</span>
-                  <span class="story-number">06</span>
                 </div>
-                <p class="story-text">Здесь будет отзыв участника.</p>
-                <div class="story-lines" aria-hidden="true">
+                <p class="story-text leading-normal" data-i18n="story_6_text"></p>
+                <div class="story-lines hidden" aria-hidden="true">
                   <span></span>
                   <span></span>
                 </div>
-                <div class="story-author flex items-center gap-3">
-                  <span class="story-avatar" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                      <circle cx="12" cy="8" r="3.5"></circle>
-                      <path d="M5 21v-2a7 7 0 0 1 14 0v2"></path>
-                    </svg>
+                
+                <div class="story-author flex items-center gap-3 pt-5 border-top">
+                  <span class="story-avatar grid place-center no-shrink border rounded-full" aria-hidden="true">
+                    <i class="fa-regular fa-user"></i>
                   </span>
-                  <span>Имя автора</span>
+                  <div class="flex column">
+                    <span data-i18n="story_6_author"></span>
+                    <small data-i18n="story_6_city"></small>
+                  </div>
                 </div>
               </article>
 
@@ -419,62 +465,53 @@
           </div>
 
 
-          <div class="stories-controls flex items-center justify-center mobile-hidden gap-4" hidden>
-            <button class="btn ghost btn-icon rounded-full carousel-control" type="button" data-carousel-prev aria-controls="stories-viewport">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
-                <path d="m14 6-6 6 6 6M8 12h12"></path>
-              </svg>
+          <div class="stories-controls flex items-center justify-center mobile-hidden absolute right-0 gap-3" hidden>
+            <button class="btn ghost btn-icon rounded-full carousel-control p-0 border shadow-none" type="button" data-carousel-prev aria-controls="stories-viewport">
+              <i class="fa-solid fa-chevron-left"></i>
             </button>
 
-            <button class="btn ghost btn-icon rounded-full carousel-control" type="button" data-carousel-next aria-controls="stories-viewport">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
-                <path d="m10 6 6 6-6 6M16 12H4"></path>
-              </svg>
+            <button class="btn ghost btn-icon rounded-full carousel-control p-0 border shadow-none" type="button" data-carousel-next aria-controls="stories-viewport">
+              <i class="fa-solid fa-chevron-right"></i>
             </button>
           </div>
 
           <div class="flex justify-center">
-            <div class="carousel-dots" role="group">
-              <button class="carousel-dot" type="button"></button>
-              <button class="carousel-dot" type="button"></button>
-              <button class="carousel-dot" type="button"></button>
-              <button class="carousel-dot" type="button"></button>
-              <button class="carousel-dot" type="button"></button>
-              <button class="carousel-dot" type="button"></button>
+            <div class="carousel-dots flex items-center gap-1 mt-6" role="group">
+              <button class="carousel-dot grid place-center no-shrink pointer" type="button"></button>
+              <button class="carousel-dot grid place-center no-shrink pointer" type="button"></button>
+              <button class="carousel-dot grid place-center no-shrink pointer" type="button"></button>
+              <button class="carousel-dot grid place-center no-shrink pointer" type="button"></button>
+              <button class="carousel-dot grid place-center no-shrink pointer" type="button"></button>
+              <button class="carousel-dot grid place-center no-shrink pointer" type="button"></button>
             
               <span data-carousel-current hidden>01</span>
             </div>
           </div>
 
-          <span class="carousel-status" role="status" aria-live="polite" aria-atomic="true"></span>
+          <span class="carousel-status sr-only" role="status" aria-live="polite" aria-atomic="true"></span>
 
         </div>
       </div>
     </section>
 
     <!-- 07 — Start Test -->
-    <section class="section final-cta" id="start">
-      <figure class="final-photo" aria-hidden="true">
-        <img src="img/coast.webp" width="1942" height="809" alt="" loading="lazy" decoding="async">
+    <section class="section final-cta relative overflow-hidden" id="start">
+      <figure class="final-photo absolute inset-0" aria-hidden="true">
+        <img src="img/coast.webp" width="1942" height="809" alt="" loading="lazy" decoding="async" class="img-cover">
       </figure>
-      <!-- <span class="ornament final-ring" aria-hidden="true">
-        <img src="svg/ornament-ring.svg" alt="" loading="lazy" decoding="async">
-      </span> -->
       <div class="container">
-        <div class="final-panel stack items-center">
-          <div class="final-copy stack items-center text-balance">
-            <span class="section-marker" aria-hidden="true"></span>
-            <h2>Найдите причину, а не боритесь только с последствиями</h2>
-            <p>Выделите до 40 минут. Отвечайте честно. Сразу после теста вы получите свой персональный график.</p>
+        <div class="final-panel stack items-center relative z-10 gap-6 mx-auto text-center">
+          <div class="final-copy stack items-center text-balance gap-6">
+            <span class="section-marker block mb-0" aria-hidden="true"></span>
+            <h2 data-i18n="final_title" class="normal"></h2>
+            <p data-i18n="final_text"></p>
           </div>
-          <div class="final-action stack items-center">
-            <a href="#" class="btn primary lg rounded-full">
-              Начать тест
-            </a>
-            <ul class="final-facts">
-              <li>200 вопросов</li>
-              <li>Ответы: да, возможно или нет</li>
-              <li>Тест и личный разбор бесплатно</li>
+          <div class="final-action stack items-center gap-6">
+            <a href="#" class="btn primary lg rounded-full" data-i18n="final_btn"></a>
+            <ul class="final-facts flex wrap mobile-column justify-center items-center row-gap-2 col-gap-6 m-0 px-4 py-2 border rounded-full">
+              <li data-i18n="final_fact_questions" class="relative leading-normal"></li>
+              <li data-i18n="final_fact_answers" class="relative leading-normal"></li>
+              <li data-i18n="final_fact_free" class="relative leading-normal"></li>
             </ul>
           </div>
         </div>
@@ -486,19 +523,19 @@
 <!-- Footer -->
   <footer class="footer border-top py-6">
     <div class="container flex row mobile-column gap-4 items-center justify-between">
-      <span>©2026 All rights reserved.</span>
-      <span>Designed by Jacaranda Group</span>
+      <span data-i18n="footer_rights"></span>
+      <span data-i18n="footer_designed"></span>
       <span>
-        <a href="#">Privacy policy</a>
+        <a href="#" data-i18n="footer_privacy"></a>
         &nbsp;|&nbsp;
-        <a href="#">Terms & Conditions</a>
+        <a href="#" data-i18n="footer_terms"></a>
       </span>
     </div>
   </footer>
 
   <script defer src="src/inmarium.js"></script>
   <script defer src="src/site.js"></script>
-  <script defer src="lang.js"></script>
+  <script defer src="src/lang.js"></script>
 
 </body>
 </html>
