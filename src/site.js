@@ -1,4 +1,48 @@
 /* Page interactions. INMARIUM remains independent of this landing page. */
+
+
+const burgerButton = document.querySelector(".burger-button");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+burgerButton.addEventListener("click", () => {
+  const isOpen = burgerButton.classList.toggle("open");
+
+  burgerButton.setAttribute("aria-expanded", isOpen);
+  mobileMenu.hidden = !isOpen;
+
+  document.body.classList.toggle("menu-open", isOpen);
+});
+
+document.querySelectorAll(".mobile-nav a, .mobile-menu-cta").forEach(link => {
+  link.addEventListener("click", () => {
+
+    burgerButton.classList.remove("open");
+    burgerButton.setAttribute("aria-expanded", "false");
+
+    mobileMenu.hidden = true;
+
+    document.body.classList.remove("menu-open");
+  });
+});
+
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 768) {
+
+    burgerButton.classList.remove("open");
+    burgerButton.setAttribute("aria-expanded", "false");
+
+    mobileMenu.hidden = true;
+
+    document.body.classList.remove("menu-open");
+  }
+});
+
+
+
+
+
+// CAROUSEL 
 (() => {
   document.querySelectorAll('[data-carousel]').forEach((carousel) => {
     const viewport = carousel.querySelector('.stories-viewport');
