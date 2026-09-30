@@ -187,7 +187,9 @@ h2 { font-size: clamp(2rem, 7vw, 2.5rem); line-height: 1.15; letter-spacing: -.0
 /* Responsive exceptions. This INMARIUM version has responsive columns,
    direction and visibility, but no mobile-gap-N, tablet-p-N or mobile-rounded-N. */
 @media (min-width: 768.02px) {
-  .hero { height: 100dvh; }
+  /* The fixed header overlays the hero. Keep one viewport as a minimum,
+     but let longer copy retain its bottom padding on short/scaled windows. */
+  .hero { height: auto; min-height: 100dvh; }
 }
 
 @media (max-width: 1199.98px) {
