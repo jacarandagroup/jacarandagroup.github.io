@@ -245,7 +245,8 @@ h2 { font-size: clamp(2rem, 7vw, 2.5rem); line-height: 1.15; letter-spacing: -.0
   .hero-mobile-facts i {flex: none; width: 16px; margin-top: .1rem; color: var(--primary);}
    
   section:not(:first-of-type):not(:last-of-type) > .container > .content-wide { text-align: center; }
-  
+  .mob-w-full { align-self: center; }
+   
   .problem-grid { row-gap: var(--space-6); }
   .problem-grid li { font-size: .96rem; gap: var(--space-3); padding-inline: var(--space-4); }
   .insight-layout.container { grid-template-columns: 1fr; }
@@ -284,7 +285,10 @@ h2 { font-size: clamp(2rem, 7vw, 2.5rem); line-height: 1.15; letter-spacing: -.0
 
 @media (max-width: 639.98px) {.hero-mobile-facts span {font-size: 0.9rem;}}
 
-@media (max-width: 480px) { .header-actions { gap: var(--space-2); } }
+@media (max-width: 480px) {
+   .header-actions { gap: var(--space-2); }
+   .mob-w-full { width: 100%; }
+}
 
 @media (max-width: 374.98px) {
   :root { --container-padding: var(--space-4); }
