@@ -47,7 +47,6 @@ h2 { font-size: clamp(2rem, 7vw, 2.5rem); line-height: 1.15; letter-spacing: -.0
 .btn.outline:hover { background: var(--primary); color: var(--text-inverse); }
 .btn span[aria-hidden] { flex: none; font-size: 1.4em; font-weight: 400; line-height: 1; transition: transform .2s ease; }
 .btn:hover span[aria-hidden] { transform: translateX(3px); }
-/* Alignment helpers live below components in this framework's layer order. */
 .toast { align-items: center; border-width: 0 0 0 4px; }
 
 /* Header and navigation */
@@ -82,7 +81,7 @@ h2 { font-size: clamp(2rem, 7vw, 2.5rem); line-height: 1.15; letter-spacing: -.0
 .mobile-menu {
   --border: rgba(32, 56, 60, .08);
   top: var(--site-header-height);
-  z-index: 99; /* Below the z-100 header; no z-99 utility exists. */
+  z-index: 99;
   background: rgba(250, 245, 236, .98);
 }
 .mobile-menu > .container { padding-bottom: max(var(--space-6), env(safe-area-inset-bottom)); }
@@ -90,7 +89,6 @@ h2 { font-size: clamp(2rem, 7vw, 2.5rem); line-height: 1.15; letter-spacing: -.0
 .mobile-nav a:hover { color: var(--primary); }
 .mobile-menu-cta { margin-top: auto; }
 
-/* Decorative artwork: negative layers are specific to this page. */
 .ornament { z-index: -1; }
 .ornament-ring, .ornament-ring-4 { height: 600px; opacity: .3; }
 .ornament-ring { transform: translate(50%, -50%); }
@@ -184,13 +182,7 @@ h2 { font-size: clamp(2rem, 7vw, 2.5rem); line-height: 1.15; letter-spacing: -.0
 .final-facts li + li::before { content: ""; position: absolute; width: 3px; height: 3px; border-radius: 50%; background: currentColor; left: -14px; top: .65em; }
 .footer { font-size: .77rem; }
 
-/* Responsive exceptions. This INMARIUM version has responsive columns,
-   direction and visibility, but no mobile-gap-N, tablet-p-N or mobile-rounded-N. */
-@media (min-width: 768.02px) {
-  /* The fixed header overlays the hero. Keep one viewport as a minimum,
-     but let longer copy retain its bottom padding on short/scaled windows. */
-  .hero { height: auto; min-height: 100dvh; }
-}
+@media (min-width: 768.02px) { .hero { height: auto; min-height: 100dvh; } }
 
 @media (max-width: 1199.98px) {
   :root { --container-padding: var(--space-8); }
@@ -230,9 +222,7 @@ h2 { font-size: clamp(2rem, 7vw, 2.5rem); line-height: 1.15; letter-spacing: -.0
   :root { --container-padding: var(--space-5); --section-padding: 3.5rem; }
   html { scroll-padding-top: 90px; }
   .brand { font-size: .64rem; letter-spacing: .07em; gap: var(--space-2); max-width: 208px; }
-  /* .btn is in components, above the mobile-hidden layout helper. */
   .desktop-cta { display: none; }
-  /* Font Awesome is unlayered too; its display rule outranks mobile-hidden. */
   .problem-grid i { display: none; }
   .section-marker { margin-bottom: var(--space-4); width: 32px; }
   .final-cta .section-marker { margin-bottom: 0; }
@@ -254,7 +244,7 @@ h2 { font-size: clamp(2rem, 7vw, 2.5rem); line-height: 1.15; letter-spacing: -.0
   .hero-mobile-facts small {font: inherit;}
   .hero-mobile-facts i {flex: none; width: 16px; margin-top: .1rem; color: var(--primary);}
    
-  .content-wide { text-align: center; }
+  section:not(:first-of-type):not(:last-of-type) > .container > .content-wide { text-align: center; }
   
   .problem-grid { row-gap: var(--space-6); }
   .problem-grid li { font-size: .96rem; gap: var(--space-3); padding-inline: var(--space-4); }
@@ -294,9 +284,7 @@ h2 { font-size: clamp(2rem, 7vw, 2.5rem); line-height: 1.15; letter-spacing: -.0
 
 @media (max-width: 639.98px) {.hero-mobile-facts span {font-size: 0.9rem;}}
 
-@media (max-width: 480px) {
-  .header-actions { gap: var(--space-2); }
-}
+@media (max-width: 480px) { .header-actions { gap: var(--space-2); } }
 
 @media (max-width: 374.98px) {
   :root { --container-padding: var(--space-4); }
