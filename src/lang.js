@@ -76,7 +76,7 @@ const translations = {
     hero_graph: "Your graph immediately after the test",
     hero_kya: "Free personal analysis in Kyalami",
 
-    problems_title: "You try to change the situation. But nothing changes",
+    problems_title: "You try to <br>change the situation. <br>But nothing changes",
     problem_money: "There is never enough money",
     problem_work: "It is difficult to find and keep a job",
     problem_anxiety: "Anxiety makes it difficult to make decisions",
@@ -95,7 +95,7 @@ const translations = {
     insight_conclusion: "That means you can see the consequences, but not what keeps leading to them again.",
     insight_cta: "Find the real cause",
 
-    process_title: "Take the test. Get your graph. Find the real cause",
+    process_title: "Take the test. <br>Get your graph. <br>Find the real cause",
     process_step1_title: "Take the test",
     process_step1_text: "Answer questions about your reactions, decisions and actions.",
     process_step2_title: "Get your graph immediately",
