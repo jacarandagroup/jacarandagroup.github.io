@@ -247,7 +247,7 @@ h2 { font-size: clamp(2rem, 7vw, 2.5rem); line-height: 1.15; letter-spacing: -.0
   .hero-mobile-facts small {font: inherit;}
   .hero-mobile-facts i {flex: none; width: 16px; margin-top: .1rem; color: var(--primary);}
    
-  main > section:not(:first-of-type):not(:last-of-type) .content-wide:has(> h2) { text-align: center; margin-inline: auto; }
+  main > section:not(:last-of-type) .content-wide:has(> h2) { text-align: center; margin-inline: auto; }
   main > section:not(:first-of-type):not(:last-of-type) .content-wide:has(> h2) > .section-marker { margin-inline: auto; }
   .mob-w-full { align-self: center; }
    
