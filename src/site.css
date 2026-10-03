@@ -233,6 +233,7 @@ h2 { font-size: clamp(2rem, 7vw, 2.5rem); line-height: 1.15; letter-spacing: -.0
   .hero-photo::before {content: ""; position: absolute; inset: 0; background: linear-gradient(90deg,rgba(250, 245, 236, .92) 0%,rgba(250, 245, 236, .72) 36%,rgba(250, 245, 236, .18) 62%,rgba(250, 245, 236, 0) 78%); z-index: 1; pointer-events: none;}
   .hero-layout { min-height: 0; }
   .hero-copy { padding-block: 35px 30px; }
+  .hero-copy:not(:last-child) { align-items: center; text-align: center; }
   .hero h1 { max-width: 640px; }
   .hero .eyebrow { font-size: .66rem; letter-spacing: .13em; }
   .hero-lead { max-width: 650px; }
